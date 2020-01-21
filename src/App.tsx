@@ -1,5 +1,7 @@
 import React from 'react';
 import styled, { createGlobalStyle } from 'styled-components';
+import ProductSection from './components/templates/ProductSection';
+import ProductCard from './components/organisms/ProductCard';
 
 const GlobalStyles = createGlobalStyle`
   @import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap');
