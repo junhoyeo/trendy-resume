@@ -63,7 +63,10 @@ const CardInfo = styled.div`
 const CardRow = styled.div`
 `;
 
-const CardCategory = styled.span`
+const CardCategory = styled(Text)`
+`;
+
+const CardPart = styled(Text)`
 `;
 
 const CardTitle = styled(Text)`

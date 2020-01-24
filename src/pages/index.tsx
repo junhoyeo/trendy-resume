@@ -3,6 +3,8 @@ import styled from 'styled-components';
 
 import ProductSection from '../components/templates/ProductSection';
 
+import '../styles/global.scss';
+
 export const Home: React.FC = () => (
   <Content>
     <ProductSection
