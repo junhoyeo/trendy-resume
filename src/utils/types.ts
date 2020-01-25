@@ -1,7 +1,7 @@
 export interface IProduct {
   category: string;
   title: string;
-  part: string[];
+  parts: string[];
   place: string;
   date: string;
   image: string;

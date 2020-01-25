@@ -21,17 +21,19 @@ export const ProductSection: React.FC<ProductSectionProps> = ({
       <SectionTitle>
         {title}
       </SectionTitle>
-      {products.map(({ category, title, part, place, date, image }, idx) => (
-        <ProductCard
-          key={`product-${idx}`}
-          category={category}
-          title={title}
-          part={part}
-          place={place}
-          date={date}
-          image={image}
-        />
-      ))}
+      <ProductList>
+        {products.map(({ category, title, parts, place, date, image }, idx) => (
+          <ProductCard
+            key={`product-${idx}`}
+            category={category}
+            title={title}
+            parts={parts}
+            place={place}
+            date={date}
+            image={image}
+          />
+        ))}
+      </ProductList>
     </Section>
   );
 };
@@ -40,4 +42,11 @@ export default ProductSection;
 
 const SectionTitle = styled(TitleText)`
   font-weight: 700;
+`;
+
+const ProductList = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
 `;
