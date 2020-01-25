@@ -1,11 +1,31 @@
 import * as React from 'react';
-import Document, { Head, Main, NextScript } from 'next/document';
+import { ServerStyleSheet } from 'styled-components';
+import Document, { Head, Main, NextScript, DocumentContext } from 'next/document';
 
-export default class extends Document {
-  render() {
+type DocumentState = {
+  styleTags: Array<React.ReactElement<{}>>;
+};
+
+export default class CustomDocument extends Document<DocumentState> {
+
+  static async getInitialProps({ renderPage }: DocumentContext) {
+    const sheet = new ServerStyleSheet();
+
+    const page = renderPage(App => props =>
+      sheet.collectStyles(<App {...props} />),
+    );
+
+    const styleTags = sheet.getStyleElement();
+    return { ...page, styleTags };
+  }
+
+  public render() {
+    const { styleTags } = this.props;
     return (
       <html>
-        <Head />
+        <Head>
+          {styleTags}
+        </Head>
         <body>
           <div className="root">
             <Main />

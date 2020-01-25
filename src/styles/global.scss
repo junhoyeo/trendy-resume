@@ -1,7 +1,9 @@
-@import url("https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap");
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR:400,500,700,900&display=swap&subset=korean');
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700,800&display=swap');
 
 html {
-  font: 112.5%/1.45 "Noto Sans KR", sans-serif;
+  font: 112.5%/1.45 'Poppins', 'Noto Sans KR', sans-serif;
 }
 
 body {

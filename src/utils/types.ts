@@ -1,8 +1,8 @@
 export interface IProduct {
   category: string;
   title: string;
-  part: string;
+  part: string[];
   place: string;
-  date: Date;
+  date: string;
   image: string;
 }

@@ -1,4 +1,5 @@
 import * as React from 'react';
+import styled from 'styled-components';
 
 import Section from '../atoms/Section';
 import { TitleText } from '../atoms/Text';
@@ -17,9 +18,9 @@ export const ProductSection: React.FC<ProductSectionProps> = ({
 }) => {
   return (
     <Section>
-      <TitleText>
+      <SectionTitle>
         {title}
-      </TitleText>
+      </SectionTitle>
       {products.map(({ category, title, part, place, date, image }, idx) => (
         <ProductCard
           key={`product-${idx}`}
@@ -36,3 +37,7 @@ export const ProductSection: React.FC<ProductSectionProps> = ({
 };
 
 export default ProductSection;
+
+const SectionTitle = styled(TitleText)`
+  font-weight: 700;
+`;

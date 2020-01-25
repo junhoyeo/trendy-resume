@@ -5,18 +5,18 @@ import { Text } from '../atoms/Text';
 type ProductCardProps = {
   category: string;
   title: string;
-  part: string;
+  part: string[];
   place: string;
-  date: Date;
+  date: string;
   image: string;
 };
 
 export const ProductCard: React.FC<ProductCardProps> = ({
   category = '',
   title,
-  part = '',
+  part = [''],
   place = '',
-  date = new Date(),
+  date = '',
   image,
 }) => {
   return (
@@ -26,13 +26,13 @@ export const ProductCard: React.FC<ProductCardProps> = ({
       />
       <CardInfo>
         <CardRow>
-          <CardCategory>
-            {category}
-          </CardCategory>
+          <CardPart>
+            {part.join(', ')}
+          </CardPart>
         </CardRow>
-        <CardPart>
-          {part}
-        </CardPart>
+        <CardCategory>
+          {category}
+        </CardCategory>
         <CardTitle>
           {title}
         </CardTitle>
@@ -52,9 +52,19 @@ export const ProductCard: React.FC<ProductCardProps> = ({
 export default ProductCard;
 
 const CardContainer = styled.div`
+  display: flex;
+  flex-grow: 1;
+  flex-basis: 21%;
+  flex-direction: column;
+  width: 100%;
+  max-width: 284.406px;
+  position: relative;
 `;
 
 const CardImage = styled.img`
+  height: 350px;
+  min-width: 100%;
+  object-fit: cover;
 `;
 
 const CardInfo = styled.div`
