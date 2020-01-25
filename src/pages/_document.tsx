@@ -2,11 +2,11 @@ import * as React from 'react';
 import { ServerStyleSheet } from 'styled-components';
 import Document, { Head, Main, NextScript, DocumentContext } from 'next/document';
 
-type DocumentState = {
+type DocumentProps = {
   styleTags: Array<React.ReactElement<{}>>;
 };
 
-export default class CustomDocument extends Document<DocumentState> {
+export default class CustomDocument extends Document<DocumentProps> {
 
   static async getInitialProps({ renderPage }: DocumentContext) {
     const sheet = new ServerStyleSheet();
