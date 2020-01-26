@@ -1,12 +1,26 @@
 import * as React from 'react';
 import styled from 'styled-components';
 
+import { Header } from '../components/templates/Header';
 import ProductSection from '../components/templates/ProductSection';
 import StackSection from '../components/templates/StackSection';
 
-import { IProduct, IStack } from '../utils/types';
+import { IProduct, IStack, ISocial } from '../utils/types';
 
 import '../styles/global.scss';
+
+const social: ISocial[] = [
+  {
+    name: 'github',
+    icon: 'fab fa-github',
+    href: 'https://github.com/junhoyeo',
+  },
+  {
+    name: 'facebook',
+    icon: 'fab fa-facebook',
+    href: 'https://www.facebook.com/juno3704',
+  },
+];
 
 const stacks: IStack[] = Array(5).fill({
   name: 'React',
@@ -27,6 +41,9 @@ const products: IProduct[] = Array(8).fill({
 
 export const Home: React.FC = () => (
   <Content>
+    <Header
+      social={social}
+    />
     <StackSection
       title="🍰 스택 맛보기"
       stacks={stacks}

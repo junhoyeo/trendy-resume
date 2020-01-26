@@ -25,6 +25,9 @@ export default class CustomDocument extends Document<DocumentProps> {
       <html>
         <Head>
           {styleTags}
+          <script
+            src="https://kit.fontawesome.com/a42f454688.js"
+          />
         </Head>
         <body>
           <div className="root">

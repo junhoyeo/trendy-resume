@@ -14,3 +14,9 @@ export interface IStack {
   color: string;
   desc: string;
 }
+
+export interface ISocial {
+  name: string;
+  icon: string;
+  href: string;
+}

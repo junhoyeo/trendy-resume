@@ -9,7 +9,7 @@ type ProgressBarProps = {
 
 export const ProgressBar: React.FC<ProgressBarProps> = ({
   className = '',
-  color = '#1E90FF',
+  color = 'dodgerblue',
   progress = 0,
 }) => (
   <Container

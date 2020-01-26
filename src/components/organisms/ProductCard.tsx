@@ -95,7 +95,7 @@ const CardCategory = styled(Text)`
   font-size: 90%;
   width: 100%;
   display: block;
-  color: #1E90FF;
+  color: dodgerblue;
   font-size: 12px;
   margin-bottom: 0.25rem;
 `;
