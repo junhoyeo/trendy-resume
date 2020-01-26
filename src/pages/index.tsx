@@ -39,6 +39,14 @@ const products: IProduct[] = Array(8).fill({
   date: '2020.01.18 ~ 2020.01.19',
 });
 
+const posts: IProduct[] = Array(4).fill({
+  image: 'https://useknowledge-git-post-variance.junhoyeo.now.sh/static/6bf30522dd29ed802ee4ca026ecae3a5/f65ec/pikachu.png',
+  title: '포켓몬 타입에는 없는 변성 알아보기',
+  parts: ['TYPE-LEVEL', 'PROGRAMMING'],
+  category: '타입스크립트',
+  date: '2020.01.09 ~ 2020.01.27',
+});
+
 export const Home: React.FC = () => (
   <Content>
     <Header
@@ -53,6 +61,11 @@ export const Home: React.FC = () => (
       id="recent"
       title="🌟 최근 활동"
       products={products}
+    />
+    <ProductSection
+      id="blog"
+      title="📖 블로그 살펴보기"
+      products={posts}
     />
   </Content>
 );
