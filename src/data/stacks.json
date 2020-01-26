@@ -1,0 +1,44 @@
+[
+  {
+    "name": "React & React Native",
+    "image": "react.png",
+    "skill": 80,
+    "color": "#52C1DE",
+    "desc": "원하는 앱을 설계하고, 어쩌고 해서 만들 수 있습니다."
+  },
+  {
+    "name": "Vue.js",
+    "image": "vue.svg",
+    "skill": 85,
+    "color": "#42b883",
+    "desc": "원하는 앱을 설계하고, 어쩌고 해서 만들 수 있습니다."
+  },
+  {
+    "name": "Next.js",
+    "image": "next-js.svg",
+    "skill": 65,
+    "color": "#0070f3",
+    "desc": "원하는 앱을 설계하고, 어쩌고 해서 만들 수 있습니다."
+  },
+  {
+    "name": "NestJS",
+    "image": "nestjs.png",
+    "skill": 20,
+    "color": "#E0234E",
+    "desc": "원하는 앱을 설계하고, 어쩌고 해서 만들 수 있습니다."
+  },
+  {
+    "name": "Express",
+    "image": "express.svg",
+    "skill": 85,
+    "color": "#68A063",
+    "desc": "원하는 앱을 설계하고, 어쩌고 해서 만들 수 있습니다."
+  },
+  {
+    "name": "Flask & Sanic",
+    "image": "flask.svg",
+    "skill": 85,
+    "color": "#424242",
+    "desc": "원하는 앱을 설계하고, 어쩌고 해서 만들 수 있습니다."
+  }
+]

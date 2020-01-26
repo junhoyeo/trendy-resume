@@ -7,7 +7,13 @@ import ProgressBar from '../molecules/ProgressBar';
 
 import { IStack } from '../../utils/types';
 
-export const StackCard: React.FC<IStack> = ({ name, skill, image, desc }) => {
+export const StackCard: React.FC<IStack> = ({
+  name,
+  skill,
+  image,
+  desc,
+  color = 'dodgerblue',
+}) => {
   return (
     <StackContainer>
       <StackImage
@@ -21,6 +27,7 @@ export const StackCard: React.FC<IStack> = ({ name, skill, image, desc }) => {
           {desc}
         </StackDesc>
         <StackProgressBar
+          color={color}
           progress={skill}
         />
       </StackInfo>
@@ -38,8 +45,8 @@ const StackContainer = styled.div`
 `;
 
 const StackImage = styled.img`
-  height: 3.5rem;
-  filter: drop-shadow(1px 2px 5px #dbedff);
+  width: 3.5rem;
+  filter: drop-shadow(1px 2px 5px rgba(30, 144, 255, 0.2));
 `;
 
 const StackInfo = styled.div`

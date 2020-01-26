@@ -24,8 +24,6 @@ export default class CustomDocument extends Document<DocumentProps> {
     return (
       <html>
         <Head>
-          <title>Résumé: Junhoyeo</title>
-          <meta name="description" content="Frontend developer Junhoyeo's Résumé" />
           {styleTags}
           <script
             src="https://kit.fontawesome.com/a42f454688.js"

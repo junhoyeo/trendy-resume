@@ -3,13 +3,13 @@ import styled, { css } from 'styled-components';
 
 type ProgressBarProps = {
   className?: string;
-  color?: string;
+  color: string;
   progress?: number;
 };
 
 export const ProgressBar: React.FC<ProgressBarProps> = ({
   className = '',
-  color = 'dodgerblue',
+  color,
   progress = 0,
 }) => (
   <Container
