@@ -19,6 +19,9 @@ export const Carousel: React.FC = () => {
         <Label>
           그렇기 때문에 오늘도 성장하기 위한 노력을 하고 있죠.
         </Label>
+        <Profile
+          src="https://via.placeholder.com/150"
+        />
       </Content>
     </CarouselContainer>
   );
@@ -46,4 +49,14 @@ const Title = styled(TitleText)`
   margin: 0;
   margin-bottom: 0.5rem;
   line-height: 1.5;
+`;
+
+const Profile = styled.img`
+  position: absolute;
+  right: 3rem;
+  top: -5%;
+  width: 300px;
+  border-radius: 50%;
+  border: 10px solid white;
+  box-shadow: 1px 1px 30px 3px rgba(30, 144, 255, 0.15);
 `;

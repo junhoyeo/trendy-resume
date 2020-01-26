@@ -47,7 +47,7 @@ const NavbarContainer = styled.div`
   /* position: sticky; */
   /* top: 0; */
   background-color: white;
-  z-index: 999;
+  /* z-index: 999; */
 `;
 
 const NavList = styled(Section)`
