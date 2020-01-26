@@ -6,3 +6,11 @@ export interface IProduct {
   date: string;
   image: string;
 }
+
+export interface IStack {
+  name: string;
+  image: string;
+  skill: number;
+  color: string;
+  desc: string;
+}

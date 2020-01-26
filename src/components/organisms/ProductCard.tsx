@@ -1,6 +1,8 @@
 import * as React from 'react';
 import styled, { css } from 'styled-components';
-import { Text } from '../atoms/Text';
+
+import Text from '../atoms/Text';
+import Label from '../molecules/Label';
 
 type ProductCardProps = {
   category: string;
@@ -64,6 +66,7 @@ const CardContainer = styled.div`
   width: 100%;
   max-width: 284.406px;
   position: relative;
+  margin-bottom: 2rem;
 `;
 
 type CardImageProps = {
@@ -134,20 +137,8 @@ const CardMeta = styled.div`
   margin-top: 0.25rem;
 `;
 
-const CardPlace = styled(Text)`
-  font-size: 12px;
-  font-family: 'Noto Sans KR', sans-serif;
-  font-weight: 500;
-  background-color: #dbedff;
-  width: fit-content;
-  color: rgba(0, 0, 0, 0.5);
+const CardPlace = styled(Label)`
 `;
 
-const CardDate = styled(Text)`
-  font-size: 12px;
-  font-family: 'Noto Sans KR', sans-serif;
-  font-weight: 500;
-  background-color: #dbedff;
-  width: fit-content;
-  color: rgba(0, 0, 0, 0.5);
+const CardDate = styled(Label)`
 `;

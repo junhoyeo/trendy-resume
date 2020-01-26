@@ -5,5 +5,6 @@ export const Text = styled.span`
 
 export default Text;
 
-export const TitleText = Text.withComponent('h1');
-export const SubtitleText = Text.withComponent('h2');
+export const TitleText = styled(Text.withComponent('h1'))`
+  font-weight: 700;
+`;

@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 import Section from '../atoms/Section';
 import { TitleText } from '../atoms/Text';
-import { ProductCard } from '../organisms/ProductCard';
+import ProductCard from '../organisms/ProductCard';
 
 import { IProduct } from '../../utils/types';
 
@@ -41,7 +41,6 @@ export const ProductSection: React.FC<ProductSectionProps> = ({
 export default ProductSection;
 
 const SectionTitle = styled(TitleText)`
-  font-weight: 700;
 `;
 
 const ProductList = styled.div`
