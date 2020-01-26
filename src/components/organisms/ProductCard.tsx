@@ -1,8 +1,9 @@
-import * as React from 'react';
+import React, { useState } from 'react';
 import styled, { css } from 'styled-components';
 
 import Text from '../atoms/Text';
 import Label from '../molecules/Label';
+import OverlayCard from './OverlayCard';
 
 type ProductCardProps = {
   category: string;
@@ -21,8 +22,14 @@ export const ProductCard: React.FC<ProductCardProps> = ({
   date = '',
   image,
 }) => {
+  const [overlay, setOverlay] = useState<boolean>(false);
+
+  const onClickCard = () => setOverlay(!overlay);
+
   return (
-    <CardContainer>
+    <CardContainer
+      onClick={onClickCard}
+    >
       <CardImage
         src={image}
       >
@@ -35,6 +42,9 @@ export const ProductCard: React.FC<ProductCardProps> = ({
             </CardPart>
           ))}
         </CardPartList>
+        <OverlayCard
+          hide={!overlay}
+        />
       </CardImage>
       <CardInfo>
         <CardCategory>
@@ -67,6 +77,7 @@ const CardContainer = styled.div`
   max-width: 284.406px;
   position: relative;
   margin-bottom: 2rem;
+  cursor: pointer;
 `;
 
 type CardImageProps = {
