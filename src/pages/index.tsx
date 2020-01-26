@@ -45,10 +45,12 @@ export const Home: React.FC = () => (
       social={social}
     />
     <StackSection
+      id="stacks"
       title="🍰 스택 맛보기"
       stacks={stacks}
     />
     <ProductSection
+      id="recent"
       title="🌟 최근 활동"
       products={products}
     />

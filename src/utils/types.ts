@@ -20,3 +20,8 @@ export interface ISocial {
   icon: string;
   href: string;
 }
+
+export interface INavigation {
+  name: string;
+  href: string;
+}

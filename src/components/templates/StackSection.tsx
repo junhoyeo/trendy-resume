@@ -8,16 +8,20 @@ import StackCard from '../organisms/StackCard';
 import { IStack } from '../../utils/types';
 
 type StackSectionProps = {
+  id?: string;
   title: string,
   stacks: IStack[];
 };
 
 export const StackSection: React.FC<StackSectionProps> = ({
+  id = '',
   title,
   stacks,
 }) => {
   return (
-    <Section>
+    <Section
+      id={id}
+    >
       <SectionTitle>
         {title}
       </SectionTitle>

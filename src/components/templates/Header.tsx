@@ -16,7 +16,7 @@ type HeaderProps = {
 
 export const Header: React.FC<HeaderProps> = ({ social }) => {
   return (
-    <HeaderContainer>
+    <>
       <HeaderSection>
         <Brand>
           <Title>Résumé</Title>
@@ -34,18 +34,11 @@ export const Header: React.FC<HeaderProps> = ({ social }) => {
       </HeaderSection>
       <Navbar />
       <Carousel />
-    </HeaderContainer>
+    </>
   );
 };
 
 export default Header;
-
-const HeaderContainer = styled.header`
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-`;
 
 const HeaderSection = styled(Section)`
   flex-direction: row;

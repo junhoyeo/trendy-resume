@@ -8,16 +8,20 @@ import ProductCard from '../organisms/ProductCard';
 import { IProduct } from '../../utils/types';
 
 type ProductSectionProps = {
+  id?: string;
   title: string,
   products: IProduct[];
 };
 
 export const ProductSection: React.FC<ProductSectionProps> = ({
+  id = '',
   title,
   products,
 }) => {
   return (
-    <Section>
+    <Section
+      id={id}
+    >
       <SectionTitle>
         {title}
       </SectionTitle>
