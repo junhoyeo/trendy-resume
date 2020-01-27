@@ -30,6 +30,10 @@ const Container = styled.div`
   width: 40rem;
   height: 1rem;
   border-radius: 4px;
+
+  @media (max-width: 1024px) {
+    width: initial;
+  }
 `;
 
 type BarProps = {

@@ -54,6 +54,10 @@ const StackInfo = styled.div`
   flex-direction: column;
   margin-left: 1.2rem;
   width: 80%;
+
+  @media (max-width: 1024px) {
+    width: -webkit-fill-available;
+  }
 `;
 
 const StackName = styled(Text)`
