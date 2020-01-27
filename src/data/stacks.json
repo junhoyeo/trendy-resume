@@ -4,41 +4,41 @@
     "image": "react.png",
     "skill": 80,
     "color": "#52C1DE",
-    "desc": "원하는 앱을 설계하고, 어쩌고 해서 만들 수 있습니다."
+    "desc": "아이디어가 떠오르면 바로 구현해 낼 수 있습니다. Hooks를 사용해서 깔끔한 코드를 (보통 타입스크립트로) 작성합니다."
   },
   {
     "name": "Vue.js",
     "image": "vue.svg",
     "skill": 85,
     "color": "#42b883",
-    "desc": "원하는 앱을 설계하고, 어쩌고 해서 만들 수 있습니다."
+    "desc": "제가 제일 처음으로 접한 프론트엔드 프레임워크로, Vuex와 Vue Router로 SPA 앱을 뚝딱 만들 수 있습니다."
   },
   {
     "name": "Next.js",
     "image": "next-js.svg",
     "skill": 65,
     "color": "#0070f3",
-    "desc": "원하는 앱을 설계하고, 어쩌고 해서 만들 수 있습니다."
+    "desc": "서버 사이드에서 렌더링되는 리액트 앱을, 경우에 따라 API 라우트를 포함하여 만들 수 있습니다."
   },
   {
     "name": "NestJS",
     "image": "nestjs.png",
     "skill": 20,
     "color": "#E0234E",
-    "desc": "원하는 앱을 설계하고, 어쩌고 해서 만들 수 있습니다."
+    "desc": "앵귤러의 구조를 지니고, 타입스크립트를 지원한다는 점이 마음에 들어서 공부하고 있습니다."
   },
   {
     "name": "Express",
     "image": "express.svg",
-    "skill": 85,
+    "skill": 75,
     "color": "#68A063",
-    "desc": "원하는 앱을 설계하고, 어쩌고 해서 만들 수 있습니다."
+    "desc": "MongoDB나 Firebase를 사용하는 API 서버를 제작할 수 있습니다."
   },
   {
     "name": "Flask & Sanic",
     "image": "flask.svg",
     "skill": 85,
     "color": "#424242",
-    "desc": "원하는 앱을 설계하고, 어쩌고 해서 만들 수 있습니다."
+    "desc": "빠르고 자유롭게 사용할 수 있습니다. 최근에는 AsyncIO를 사용하면서도 Flask와 유사한 문법을 사용하는 Sanic을 사용합니다."
   }
 ]
