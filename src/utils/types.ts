@@ -1,10 +1,18 @@
+export interface ILink {
+  icon: string;
+  text: string;
+  href: string;
+}
+
 export interface IProduct {
-  category: string;
+  category?: string;
   title: string;
-  parts: string[];
-  place: string;
-  date: string;
+  parts?: string[];
+  place?: string;
+  date?: string;
   image: string;
+  desc?: string;
+  links?: ILink[];
 }
 
 export interface IStack {

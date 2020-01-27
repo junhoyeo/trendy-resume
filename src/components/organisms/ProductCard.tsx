@@ -5,22 +5,17 @@ import Text from '../atoms/Text';
 import Label from '../molecules/Label';
 import OverlayCard from './OverlayCard';
 
-type ProductCardProps = {
-  category: string;
-  title: string;
-  parts: string[];
-  place: string;
-  date: string;
-  image: string;
-};
+import { IProduct } from '../../utils/types';
 
-export const ProductCard: React.FC<ProductCardProps> = ({
+export const ProductCard: React.FC<IProduct> = ({
   category = '',
   title,
   parts = [''],
   place = '',
   date = '',
   image,
+  desc = '',
+  links = [],
 }) => {
   const [overlay, setOverlay] = useState<boolean>(false);
 
@@ -44,6 +39,8 @@ export const ProductCard: React.FC<ProductCardProps> = ({
         </CardPartList>
         <OverlayCard
           hide={!overlay}
+          desc={desc}
+          links={links}
         />
       </CardImage>
       <CardInfo>

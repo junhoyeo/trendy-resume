@@ -11,7 +11,7 @@ export const Carousel: React.FC = () => {
       <Content>
         <Title>
           Frontend is<br />
-          INEVITABLE
+          INEVITABLE™
         </Title>
         <Label>
           불가능한 프론트엔드는 없다고 믿습니다.

@@ -8,6 +8,24 @@
     ],
     "category": "애플리케이션",
     "place": "HIGHTHON : NewYear(2020)",
-    "date": "2020.01.18 ~ 2020.01.19"
+    "date": "2020.01.18 ~ 2020.01.19",
+    "desc": "(대충 이 프로젝트가 뭐하는 거고 뭐 담당했는지 알려주는 아무말 같은 설명), 와!",
+    "links": [
+      {
+        "icon": "fas fa-book",
+        "text": "포스트 읽으러 가기",
+        "href": "https://github.com/junhoyeo"
+      },
+      {
+        "icon": "fab fa-github",
+        "text": "안드로이드 코드 보기",
+        "href": "https://github.com/junhoyeo"
+      },
+      {
+        "icon": "fab fa-github",
+        "text": "백엔드 코드 보기",
+        "href": "https://github.com/junhoyeo"
+      }
+    ]
   }
 ]

@@ -5,36 +5,19 @@ import Text from '../atoms/Text';
 import Icon from '../molecules/Icon';
 
 import openNewWindow from '../../utils/openNewWindow';
-
-interface ILink {
-  icon: string;
-  text: string;
-  href: string;
-}
-
-const links: ILink[] = [
-  {
-    icon: 'fas fa-book',
-    text: '포스트 읽으러 가기',
-    href: 'https://github.com/junhoyeo',
-  },
-  {
-    icon: 'fab fa-github',
-    text: '안드로이드 코드 보기',
-    href: 'https://github.com/junhoyeo',
-  },
-  {
-    icon: 'fab fa-github',
-    text: '백엔드 코드 보기',
-    href: 'https://github.com/junhoyeo',
-  },
-];
+import { ILink } from '../../utils/types';
 
 type OverlayCardProps = {
   hide?: boolean;
+  desc?: string;
+  links: ILink[];
 };
 
-export const OverlayCard: React.FC<OverlayCardProps> = ({ hide }) => {
+export const OverlayCard: React.FC<OverlayCardProps> = ({
+  hide,
+  desc = '',
+  links = [],
+}) => {
   if (hide) {
     return (null);
   }
@@ -50,7 +33,7 @@ export const OverlayCard: React.FC<OverlayCardProps> = ({ hide }) => {
   return (
     <OverlayContainer>
       <Description>
-        (대충 이 프로젝트가 뭐하는 거고 뭐 담당했는지 알려주는 아무말 같은 설명), 와!
+        {desc || '설명 없음'}
         <Separator />
       </Description>
       <IconList>

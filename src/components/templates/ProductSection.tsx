@@ -26,17 +26,22 @@ export const ProductSection: React.FC<ProductSectionProps> = ({
         {title}
       </SectionTitle>
       <ProductList>
-        {products.map(({ category, title, parts, place, date, image }, idx) => (
-          <ProductCard
-            key={`product-${idx}`}
-            category={category}
-            title={title}
-            parts={parts}
-            place={place}
-            date={date}
-            image={image}
-          />
-        ))}
+        {products.map((product, idx) => {
+          const { category, title, parts, place, date, image, desc, links } = product;
+          return (
+            <ProductCard
+              key={`product-${idx}`}
+              category={category}
+              title={title}
+              parts={parts}
+              place={place}
+              date={date}
+              image={image}
+              desc={desc}
+              links={links}
+            />
+          );
+        })}
       </ProductList>
     </Section>
   );
