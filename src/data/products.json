@@ -1,6 +1,6 @@
 [
   {
-    "image": "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?fit=crop&w=1950&q=80",
+    "image": "static/products/wadong.png",
     "title": "나에게 추억이란 복덩이를, WADONG",
     "parts": [
       "BACKEND",
@@ -9,16 +9,71 @@
     "category": "애플리케이션",
     "place": "HIGHTHON : NewYear(2020)",
     "date": "2020.01.18 ~ 2020.01.19",
-    "desc": "(대충 이 프로젝트가 뭐하는 거고 뭐 담당했는지 알려주는 아무말 같은 설명), 와!",
+    "desc": "'복덩이'라는 주제에 맞게 제작한 서비스입니다. 자존감이 떨어질 때, 이전에 올린 스토리들을 확인하며 기운을 낼 수 있도록 합니다. 또한 특정 '복주머니 구역'에 가게 되면, 맛집, 경험, 놀거리 등 해당 위치 근처에 등록된 정보를 보여줍니다. 데이터를 가져오는 파셔를 제작해, 데모 앱에 들어갈 JSON mocking을 만들었습니다.",
     "links": [
       {
-        "icon": "fas fa-book",
-        "text": "포스트 읽으러 가기",
-        "href": "https://github.com/junhoyeo"
+        "icon": "fab fa-github",
+        "text": "백엔드 코드 보기",
+        "href": "https://github.com/junhoyeo/wadong-backend"
       },
       {
         "icon": "fab fa-github",
         "text": "안드로이드 코드 보기",
+        "href": "https://github.com/MinSeungHyun/wadong-android"
+      }
+    ]
+  },
+  {
+    "image": "static/products/their-own-league.png",
+    "title": "맨날 코딩하는 우리들만의 이야기. 그들만의 리그",
+    "parts": [
+      "PERSONAL"
+    ],
+    "category": "웹 서비스",
+    "place": "개인 프로젝트",
+    "date": "2020.01.06 ~ 2020.01.07",
+    "desc": "학교 친구들과 함께 치느님을 걸고 일일커밋을 하면서, 서로를 감시할 수 있는 서비스가 있으면 좋겠다고 생각해 시작한 개인 프로젝트입니다. 등록한 사람들의 커밋 그래프와 오늘 커밋한 양을 확인할 수 있습니다.",
+    "links": [
+      {
+        "icon": "fab fa-github",
+        "text": "프로젝트 코드 보기",
+        "href": "https://github.com/junhoyeo/github-streak-competition"
+      }
+    ]
+  },
+  {
+    "image": "static/products/citation.png",
+    "title": "작년에 고마웠던 분들께 한 장씩, 새해에는 감사장!",
+    "parts": [
+      "PERSONAL"
+    ],
+    "category": "웹 서비스",
+    "place": "개인 프로젝트",
+    "date": "2019.12.29 ~ 2020.01.01",
+    "desc": "새해를 맞아 진행한 개인 프로젝트입니다. 고마웠던 마음을 전할 수 있는 감사장을 생성하고, 카카오톡과 페이스북 등으로 다른 사람들에게 공유할 수 있는 웹 서비스를 개발했습니다.",
+    "links": [
+      {
+        "icon": "fab fa-github",
+        "text": "프로젝트 코드 보기",
+        "href": "https://github.com/junhoyeo/citation"
+      }
+    ]
+  },
+  {
+    "image": "static/products/danim.png",
+    "title": "세상을 거닐다, 다님.",
+    "parts": [
+      "APP",
+      "DESIGN"
+    ],
+    "category": "애플리케이션",
+    "place": "제 19회 앱잼 - 생활 부문 최우수상(1위)",
+    "date": "2019.12.21 ~ 2019.12.22",
+    "desc": "스스로 또는 소중한 사람에게, 특별한 여행을 선물할 수 있도록 도와주는 앱입니다. 맞춤형 여행 상품을 제공하고 선물할 수 있게 합니다. 인앱 UI를 디자인한 뒤 React Native를 이용해 모바일 앱을 제작하는 것을 담당했습니다.",
+    "links": [
+      {
+        "icon": "fab fa-github",
+        "text": "모바일 앱 코드 보기",
         "href": "https://github.com/junhoyeo"
       },
       {

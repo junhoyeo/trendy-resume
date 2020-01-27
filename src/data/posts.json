@@ -7,6 +7,14 @@
       "PROGRAMMING"
     ],
     "category": "타입스크립트",
-    "date": "2020.01.09 ~ 2020.01.27"
+    "date": "2020.01.09 ~ 2020.01.27",
+    "desc": "타입 레벨 프로그래밍에 존재하는 개념인 '변성'을 바닥부터 자세히 다루고자 합니다.",
+    "links": [
+      {
+        "icon": "fas fa-book",
+        "text": "작성중인 포스트 미리 읽어보기",
+        "href": "https://useknowledge-git-post-variance.junhoyeo.now.sh/%ED%8F%AC%EC%BC%93%EB%AA%AC%20%ED%83%80%EC%9E%85%EC%97%90%EB%8A%94%20%EC%97%86%EB%8A%94%20%EB%B3%80%EC%84%B1%20%EC%95%8C%EC%95%84%EB%B3%B4%EA%B8%B0/"
+      }
+    ]
   }
 ]

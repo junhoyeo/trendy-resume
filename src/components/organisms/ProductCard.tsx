@@ -75,6 +75,32 @@ const CardContainer = styled.div`
   position: relative;
   margin-bottom: 2rem;
   cursor: pointer;
+
+  @media (max-width: 1400px) {
+    padding: 0 0.45rem;
+
+    &:first-child {
+      padding-left: 0;
+    }
+
+    &:nth-child(4n) {
+      padding-right: 0;
+    }
+  }
+
+  @media (max-width: 950px) {
+    padding: 0;
+    flex-basis: 51%;
+    position: relative;
+    max-width: 47%;
+  }
+
+  @media (max-width: 400px) {
+    max-width: 100%;
+    float: unset;
+    position: unset;
+    flex-basis: 100%;
+  }
 `;
 
 type CardImageProps = {
@@ -92,6 +118,10 @@ const CardImage = styled.div<CardImageProps>`
   ${({ src }) => src && css`
     background-image: url(${src});
   `}
+
+  @media (max-width: 400px) {
+    height: 180px;
+  }
 `;
 
 const CardInfo = styled.div`
