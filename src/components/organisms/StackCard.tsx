@@ -18,6 +18,7 @@ export const StackCard: React.FC<IStack> = ({
     <StackContainer>
       <StackImage
         src={`static/stacks/${image}`}
+        draggable="false"
       />
       <StackInfo>
         <StackName>

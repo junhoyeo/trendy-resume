@@ -21,6 +21,7 @@ export const Carousel: React.FC = () => {
         </Label>
         <Profile
           src="https://github.com/junhoyeo.png"
+          draggable="false"
         />
       </Content>
     </CarouselContainer>
