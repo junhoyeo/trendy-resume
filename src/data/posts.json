@@ -7,6 +7,7 @@
       "PROGRAMMING"
     ],
     "category": "타입스크립트",
+    "place": "useKnowledge",
     "date": "2020.01.09 ~ 2020.01.27",
     "desc": "타입 레벨 프로그래밍에 존재하는 개념인 '변성'을 바닥부터 자세히 다루고자 합니다.",
     "links": [

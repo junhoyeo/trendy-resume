@@ -4,8 +4,10 @@ import styled from 'styled-components';
 import Section from '../atoms/Section';
 import { TitleText } from '../atoms/Text';
 import ProductCard from '../organisms/ProductCard';
+import SkeletonCard from '../organisms/SkeletonCard';
 
 import { IProduct } from '../../utils/types';
+import useWindowSize from '../../utils/useWindowSize';
 
 type ProductSectionProps = {
   id?: string;
@@ -18,6 +20,18 @@ export const ProductSection: React.FC<ProductSectionProps> = ({
   title,
   products,
 }) => {
+  const { width = 0 } = useWindowSize();
+  const [lack, cardsInOneRow] = ((width: number): [number, number] => {
+    if (width < 400) {
+      return [0, 0];
+    }
+    const cardsInOneRow = (width <= 950) ? 2 : 4;
+    return [
+      products.length % cardsInOneRow,
+      cardsInOneRow,
+    ];
+  })(width);
+
   return (
     <Section
       id={id}
@@ -42,6 +56,11 @@ export const ProductSection: React.FC<ProductSectionProps> = ({
             />
           );
         })}
+        {!lack || [...Array(cardsInOneRow - lack)].map((_, idx: number) => (
+          <SkeletonCard
+            key={`skeleton-${idx}`}
+          />
+        ))}
       </ProductList>
     </Section>
   );

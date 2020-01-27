@@ -7,7 +7,13 @@ import OverlayCard from './OverlayCard';
 
 import { IProduct } from '../../utils/types';
 
-export const ProductCard: React.FC<IProduct> = ({
+interface IProductCard extends IProduct {
+  className?: string;
+  noClick?: boolean;
+}
+
+export const ProductCard: React.FC<IProductCard> = ({
+  className = '',
   category = '',
   title,
   parts = [''],
@@ -16,6 +22,7 @@ export const ProductCard: React.FC<IProduct> = ({
   image,
   desc = '',
   links = [],
+  noClick = false,
 }) => {
   const [overlay, setOverlay] = useState<boolean>(false);
 
@@ -23,10 +30,12 @@ export const ProductCard: React.FC<IProduct> = ({
 
   return (
     <CardContainer
-      onClick={onClickCard}
+      className={className}
+      onClick={noClick ? undefined : onClickCard}
     >
       <CardImage
         src={image}
+        className="image"
       >
         <CardPartList>
           {parts.map((part, idx) => (
@@ -44,17 +53,25 @@ export const ProductCard: React.FC<IProduct> = ({
         />
       </CardImage>
       <CardInfo>
-        <CardCategory>
+        <CardCategory
+          className="category"
+        >
           {category}
         </CardCategory>
-        <CardTitle>
+        <CardTitle
+          className="title"
+        >
           {title}
         </CardTitle>
         <CardMeta>
-          <CardPlace>
+          <CardPlace
+            className="place"
+          >
             {place}
           </CardPlace>
-          <CardDate>
+          <CardDate
+            className="date"
+          >
             {date}
           </CardDate>
         </CardMeta>
