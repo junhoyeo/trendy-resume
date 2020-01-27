@@ -44,6 +44,10 @@ const NavContainer = styled.div<ISelected>`
     margin-right: 1rem;
   }
 
+  @media (max-width: 500px) {
+    min-width: 2rem;
+  }
+
   ${({ selected }) => selected && css`
     color: royalblue;
     border-bottom-color: royalblue;
@@ -54,4 +58,8 @@ const NavText = styled(Text)`
   font-size: 15px;
   font-weight: 700;
   letter-spacing: -0.5px;
+
+  @media (max-width: 352px) {
+    font-size: 12px;
+  }
 `;

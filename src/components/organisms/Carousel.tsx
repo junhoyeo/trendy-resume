@@ -73,4 +73,8 @@ const Profile = styled.img`
   @media (max-width: 500px) {
     width: 110px;
   }
+
+  @media (max-width: 352px) {
+    width: 80px;
+  }
 `;
