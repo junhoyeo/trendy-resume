@@ -92,10 +92,10 @@ const Profile = styled.img<ProfileProps>`
   border: 10px solid #76B7FF;
   box-shadow: 1px 1px 30px 3px rgba(30, 144, 255, 0.15);
   object-fit: cover;
+  background-color: white;
 
   ${({ contain }) => contain && css`
     object-fit: contain;
-    background-color: white;
   `};
 
   @media (max-width: 768px) {
