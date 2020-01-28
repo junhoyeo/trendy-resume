@@ -33,3 +33,8 @@ export interface INavigation {
   name: string;
   href: string;
 }
+
+export interface IAvatar {
+  image: string;
+  contain?: boolean;
+}
