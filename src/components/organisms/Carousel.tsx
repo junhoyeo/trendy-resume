@@ -1,11 +1,17 @@
 import React from 'react';
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 
 import { Section } from '../atoms/Section';
 import { TitleText } from '../atoms/Text';
 import Label from '../molecules/Label';
 
+import getRandomSelect from '../../utils/getRandomSelect';
+import { IAvatar } from '../../utils/types';
+
+const avatars: IAvatar[] = require('../../data/avatar.json');
+
 export const Carousel: React.FC = () => {
+  const { image: profile, contain = false } = getRandomSelect<IAvatar>(avatars);
   return (
     <CarouselContainer>
       <Content>
@@ -20,8 +26,9 @@ export const Carousel: React.FC = () => {
           그렇기 때문에 오늘도 성장하기 위한 노력을 하고 있죠.
         </Desc>
         <Profile
-          src="https://github.com/junhoyeo.png"
+          src={`static/avatar/${profile}`}
           draggable="false"
+          contain={contain}
         />
       </Content>
     </CarouselContainer>
@@ -64,31 +71,46 @@ const Desc = styled(Label)`
   }
 `;
 
-const Profile = styled.img`
+type ProfileProps = {
+  contain: boolean;
+};
+
+const Profile = styled.img<ProfileProps>`
   position: absolute;
   right: 0;
-  top: -5%;
+  top: -3%;
   width: 300px;
+  height: 300px;
   border-radius: 50%;
-  border: 10px solid white;
+  border: 10px solid #76B7FF;
   box-shadow: 1px 1px 30px 3px rgba(30, 144, 255, 0.15);
+  object-fit: cover;
+
+  ${({ contain }) => contain && css`
+    object-fit: contain;
+    background-color: white;
+  `};
 
   @media (max-width: 768px) {
     width: 150px;
+    height: 150px;
     top: 13%;
     right: 0;
   }
 
   @media (max-width: 500px) {
     width: 110px;
+    height: 110px;
   }
 
   @media (max-width: 352px) {
     width: 80px;
+    height: 80px;
     border-width: 6px;
   }
 
   @media (max-width: 330px) {
     width: 78px;
+    height: 78px;
   }
 `;

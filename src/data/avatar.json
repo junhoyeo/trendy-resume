@@ -1,0 +1,37 @@
+[
+  {
+    "image": "coffee.png"
+  },
+  {
+    "image": "hey.png"
+  },
+  {
+    "image": "look.png",
+    "contain": true
+  },
+  {
+    "image": "selfie.gif"
+  },
+  {
+    "image": "sit.png"
+  },
+  {
+    "image": "sleep.gif"
+  },
+  {
+    "image": "smile.png",
+    "contain": true
+  },
+  {
+    "image": "tok.png",
+    "contain": true
+  },
+  {
+    "image": "walk.png",
+    "contain": true
+  },
+  {
+    "image": "watch.png",
+    "contain": true
+  }
+]
