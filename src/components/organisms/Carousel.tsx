@@ -13,12 +13,12 @@ export const Carousel: React.FC = () => {
           Frontend is<br />
           INEVITABLE™
         </Title>
-        <Label>
+        <Desc>
           불가능한 프론트엔드는 없다고 믿습니다.
-        </Label>
-        <Label>
+        </Desc>
+        <Desc>
           그렇기 때문에 오늘도 성장하기 위한 노력을 하고 있죠.
-        </Label>
+        </Desc>
         <Profile
           src="https://github.com/junhoyeo.png"
           draggable="false"
@@ -54,6 +54,10 @@ const Title = styled(TitleText)`
   @media (max-width: 768px) {
     font-size: 32px;
   }
+`;
+
+const Desc = styled(Label)`
+  font-size: 16px;
 `;
 
 const Profile = styled.img`

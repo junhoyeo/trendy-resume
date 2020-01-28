@@ -82,5 +82,98 @@
         "href": "https://github.com/junhoyeo"
       }
     ]
+  },
+  {
+    "image": "static/products/deliveries.png",
+    "title": "시킨 물건이 어디까지 왔는지, 한꺼번에 확인하기. 당신의 모든 배송",
+    "parts": [
+      "PERSONAL"
+    ],
+    "category": "웹 서비스",
+    "place": "개인 프로젝트",
+    "date": "2019.11.03",
+    "desc": "택배 몇 개를 시켰는데, 각자 따로 배송 조회를 하기에는 귀찮아서 진행하게 된 개인 프로젝트입니다. 운송장 번호를 등록해 두면 배송 상태를 한번에 확인할 수 있는 서비스를 만들었습니다.",
+    "links": [
+      {
+        "icon": "fa fa-globe",
+        "text": "서비스 이용하기",
+        "href": "https://junhoyeo.github.io/deliveries/"
+      },
+      {
+        "icon": "fab fa-github",
+        "text": "프로젝트 코드 보기",
+        "href": "https://github.com/junhoyeo/deliveries"
+      }
+    ]
+  },
+  {
+    "image": "static/products/dimigoin.png",
+    "title": "한국디지털미디어고등학교 시스템 전산화 프로젝트: 디미고인",
+    "parts": [
+      "FRONTEND"
+    ],
+    "category": "웹 서비스 / 인트라넷",
+    "place": "디미고인 개발팀",
+    "date": "2019.02 ~",
+    "desc": "한국디지털미디어고등학교 인트라넷 '디미고인' 개발팀의 프론트엔드 관리자로 활동하고 있습니다. Vue.js를 사용해 동아리, 방과후, 인강실, 멘토링 등 각종 신청 및 교사용 관리 페이지 등의 서비스를 개발하고, 유지보수하고 있습니다.",
+    "links": [
+      {
+        "icon": "fa fa-globe",
+        "text": "서비스 이용하기",
+        "href": "https://dimigo.in/"
+      },
+      {
+        "icon": "fab fa-github",
+        "text": "프론트엔드 코드 보기",
+        "href": "https://github.com/dimigoin/dimigoin-front"
+      }
+    ]
+  },
+  {
+    "image": "static/products/comgong.png",
+    "title": "직접 눌러보고 나서, 막장인 당신의 삶을 공유해요. 컴공과 빙고",
+    "parts": [
+      "PERSONAL"
+    ],
+    "category": "웹 서비스",
+    "place": "개인 프로젝트",
+    "date": "2019.02.01 ~ 2019.02.02",
+    "desc": "SNS에서 유행하던 '컴공과 빙고'를 웹 앱으로 구현했습니다. 직접 빙고판을 체크하고 링크를 통해 이름과 함께 공유할 수 있답니다.",
+    "links": [
+      {
+        "icon": "fa fa-globe",
+        "text": "서비스 이용하기",
+        "href": "https://junhoyeo.github.io/Comgong-Bingo/"
+      },
+      {
+        "icon": "fab fa-github",
+        "text": "프로젝트 코드 보기",
+        "href": "https://github.com/junhoyeo/Comgong-Bingo"
+      }
+    ]
+  },
+  {
+    "image": "static/products/biss.png",
+    "title": "블록체인으로 만드는 안전한 IoT, BISS",
+    "parts": [
+      "BACKEND",
+      "BLOCKCHAIN"
+    ],
+    "category": "블록체인 솔루션",
+    "place": "2018 제주 블록체인 해커톤 - 우수상(2위)",
+    "date": "2018.10.26 ~ 2018.10.28",
+    "desc": "IoT 디바이스의 펌웨어를 업데이트하거나 데이터를 송신할 때 블록체인을 이용해서 무결성을 검증하는 솔루션입니다. Flask(이후 Sanic으로 변경)로 백엔드 API 서버를 개발하고, Solidity로 Klaytn 스마트 컨트랙트를 작성했습니다.",
+    "links": [
+      {
+        "icon": "fab fa-github",
+        "text": "백엔드 코드 보기",
+        "href": "https://github.com/LAB-C/BISS-FirmwareServer"
+      },
+      {
+        "icon": "fab fa-github",
+        "text": "컨트랙트 코드 보기",
+        "href": "https://github.com/LAB-C/BISS-Blockchain-Klaytn"
+      }
+    ]
   }
 ]
