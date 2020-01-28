@@ -58,6 +58,10 @@ const Title = styled(TitleText)`
 
 const Desc = styled(Label)`
   font-size: 16px;
+
+  @media (max-width: 768px) {
+    font-size: 12px;
+  }
 `;
 
 const Profile = styled.img`
@@ -81,5 +85,10 @@ const Profile = styled.img`
 
   @media (max-width: 352px) {
     width: 80px;
+    border-width: 6px;
+  }
+
+  @media (max-width: 330px) {
+    width: 78px;
   }
 `;
