@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import styled, { css } from 'styled-components';
 
 import { Section } from '../atoms/Section';
@@ -11,7 +11,14 @@ import { IAvatar } from '../../utils/types';
 const avatars: IAvatar[] = require('../../data/avatar.json');
 
 export const Carousel: React.FC = () => {
-  const { image: profile, contain = false } = getRandomSelect<IAvatar>(avatars);
+  const [avatar, setAvatar] = useState<IAvatar>({
+    image: 'sit.png',
+  });
+
+  const onChangeAvatar = () => setAvatar(getRandomSelect<IAvatar>(avatars));
+
+  useEffect(onChangeAvatar);
+  const { image: profile, contain = false } = avatar;
   return (
     <CarouselContainer>
       <Content>
