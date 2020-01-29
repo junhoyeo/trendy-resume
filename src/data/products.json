@@ -96,14 +96,19 @@
     "desc": "학생증을 통한 특별실 출입 관리 솔루션입니다. RFID 리더와 도어락이 장착된 문 프로토타입을 만든 뒤, 휴대폰 NFC나 학생증이 접촉되면 서버로의 인증 과정을 거쳐 문이 열고 닫히는 구조입니다. 이 중 웹 프론트엔드와 서버 API를 담당했습니다.",
     "links": [
       {
-        "icon": "fa fa-globe",
-        "text": "서비스 이용하기",
-        "href": "https://junhoyeo.github.io/deliveries/"
+        "icon": "fab fa-github",
+        "text": "웹 코드 보기",
+        "href": "https://github.com/junhoyeo/cake-web"
       },
       {
         "icon": "fab fa-github",
-        "text": "프로젝트 코드 보기",
-        "href": "https://github.com/junhoyeo/deliveries"
+        "text": "모바일 앱 코드 보기",
+        "href": "https://github.com/MinSeungHyun/Cake"
+      },
+      {
+        "icon": "fab fa-github",
+        "text": "하드웨어 코드 보기",
+        "href": "https://github.com/Changemin/Cake-hardware"
       }
     ]
   },
@@ -120,14 +125,9 @@
     "desc": "비컨을 사용하여 음성으로 신호등의 위치와 신호를 알려주는 솔루션입니다. 비컨이 부착된 신호등 근처에 가면 음성과 진동으로 신호등의 위치와 상태에 대한 피드백을 줍니다. 앱과 신호등의 프로토타입을 제작해서 시연했으며, 이 중 React Native로 앱을 제작하는 것을 맡았습니다.",
     "links": [
       {
-        "icon": "fa fa-globe",
-        "text": "서비스 이용하기",
-        "href": "https://junhoyeo.github.io/deliveries/"
-      },
-      {
         "icon": "fab fa-github",
-        "text": "프로젝트 코드 보기",
-        "href": "https://github.com/junhoyeo/deliveries"
+        "text": "모바일 앱 코드 보기",
+        "href": "https://github.com/invisible-light/inssa-app"
       }
     ]
   },
@@ -167,14 +167,9 @@
     "desc": "인도어 맵 데이터를 기반으로 건물 내 네트워크 서비스를 제공하는 서비스입니다. 디미고 대표로 친구와 함께 나가게 된 캠프에서 디자인과 프로토타입 개발을 담당했습니다.",
     "links": [
       {
-        "icon": "fa fa-globe",
-        "text": "서비스 이용하기",
-        "href": "https://junhoyeo.github.io/deliveries/"
-      },
-      {
         "icon": "fab fa-github",
         "text": "프로젝트 코드 보기",
-        "href": "https://github.com/junhoyeo/deliveries"
+        "href": "https://github.com/junhoyeo/wand"
       }
     ]
   },
@@ -191,14 +186,14 @@
     "desc": "모르는 문제를 올리면 멘토와 멘티를 매칭해 주고, 각종 부가 기능을 제공해 과정 중심 자기주도학습을 진행할 수 있게 하는 교내 멘토링 서비스입니다. Sanic으로 백엔드 서버를 제작하고, 친구를 도와 React Native로 애플리케이션을 만들었습니다.",
     "links": [
       {
-        "icon": "fa fa-globe",
-        "text": "서비스 이용하기",
-        "href": "https://junhoyeo.github.io/deliveries/"
+        "icon": "fab fa-github",
+        "text": "백엔드 코드 보기",
+        "href": "https://github.com/inudevs/ithaca-server"
       },
       {
         "icon": "fab fa-github",
-        "text": "프로젝트 코드 보기",
-        "href": "https://github.com/junhoyeo/deliveries"
+        "text": "모바일 앱 코드 보기",
+        "href": "https://github.com/inudevs/ithaca-app"
       }
     ]
   },
@@ -214,14 +209,9 @@
     "desc": "ZEPETO Render API의 제페토 프로필을 이용해 글로벌 커뮤니케이션을 원하는 Z세대 사용자들에게 진입장벽이 낮고, 재미있지만 기존 서비스보다 안전한 소셜 디스커버리 서비스를 만들었습니다. Flask로 서비스 백엔드 API 개발과 연동, Socket.io를 이용한 채팅 서버를 담당했습니다.",
     "links": [
       {
-        "icon": "fa fa-globe",
-        "text": "서비스 이용하기",
-        "href": "https://junhoyeo.github.io/deliveries/"
-      },
-      {
         "icon": "fab fa-github",
-        "text": "프로젝트 코드 보기",
-        "href": "https://github.com/junhoyeo/deliveries"
+        "text": "백엔드 코드 보기",
+        "href": "https://github.com/junhoyeo/Fairy-zepeto-server"
       }
     ]
   },
@@ -238,14 +228,9 @@
     "desc": "문화재를 전시할 때 관리자가 주변 환경을 모니터링할 수 있게 하고, 비컨으로서 정보를 관람객에게 브로드캐스팅하는 진열대 시스템입니다. 프로젝트 전체를 기획하고, Vue.js를 이용한 모바일 웹 앱을 개발했습니다.",
     "links": [
       {
-        "icon": "fa fa-globe",
-        "text": "서비스 이용하기",
-        "href": "https://junhoyeo.github.io/deliveries/"
-      },
-      {
         "icon": "fab fa-github",
-        "text": "프로젝트 코드 보기",
-        "href": "https://github.com/junhoyeo/deliveries"
+        "text": "프론트엔드 코드 보기",
+        "href": "https://github.com/inudevs/CUBE-Web"
       }
     ]
   },
@@ -261,14 +246,9 @@
     "desc": "학기 초반, 노트북을 사용하느라 미처 다음 수업을 준비하지 못하는 친구들을 보고 만들었습니다. 크롬 플러그인으로 브라우저 내에서 빠르게 시간표와 급식 정보를 조회하고, 날짜에 따라 필요한 인트라넷에 빠르게 연결할 수 있습니다.",
     "links": [
       {
-        "icon": "fa fa-globe",
-        "text": "서비스 이용하기",
-        "href": "https://junhoyeo.github.io/deliveries/"
-      },
-      {
         "icon": "fab fa-github",
         "text": "프로젝트 코드 보기",
-        "href": "https://github.com/junhoyeo/deliveries"
+        "href": "https://github.com/junhoyeo/Dimicigan-Chrome"
       }
     ]
   },
@@ -283,11 +263,6 @@
     "date": "2019.02 ~",
     "desc": "한국디지털미디어고등학교 인트라넷 '디미고인' 개발팀의 프론트엔드 관리자로 활동하고 있습니다. Vue.js를 사용해 동아리, 방과후, 인강실, 멘토링 등 각종 신청 및 교사용 관리 페이지 등의 서비스를 개발하고, 유지보수하고 있습니다.",
     "links": [
-      {
-        "icon": "fa fa-globe",
-        "text": "서비스 이용하기",
-        "href": "https://dimigo.in/"
-      },
       {
         "icon": "fab fa-github",
         "text": "프론트엔드 코드 보기",
