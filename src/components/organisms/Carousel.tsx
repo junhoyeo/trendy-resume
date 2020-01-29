@@ -12,7 +12,8 @@ const avatars: IAvatar[] = require('../../data/avatar.json');
 
 export const Carousel: React.FC = () => {
   const [avatar, setAvatar] = useState<IAvatar>({
-    image: 'sit.png',
+    image: 'default.png',
+    contain: true,
   });
 
   const onChangeAvatar = () => setAvatar(getRandomSelect<IAvatar>(avatars));
@@ -89,10 +90,11 @@ const Profile = styled.img<ProfileProps>`
   width: 300px;
   height: 300px;
   border-radius: 50%;
-  border: 10px solid #76B7FF;
+  border: 10px solid white;
   box-shadow: 1px 1px 30px 3px rgba(30, 144, 255, 0.15);
   object-fit: cover;
-  background-color: white;
+  object-position: top;
+  background-color: #F0C14F;
 
   ${({ contain }) => contain && css`
     object-fit: contain;

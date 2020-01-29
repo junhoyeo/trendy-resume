@@ -3,35 +3,47 @@
     "image": "coffee.png"
   },
   {
-    "image": "hey.png"
+    "image": "default.png"
   },
   {
-    "image": "look.png",
+    "image": "gaze.png"
+  },
+  {
+    "image": "grin.gif"
+  },
+  {
+    "image": "heart.gif"
+  },
+  {
+    "image": "hello.png"
+  },
+  {
+    "image": "lend.png",
+    "contain": true
+  },
+  {
+    "image": "poze.png",
     "contain": true
   },
   {
     "image": "selfie.gif"
   },
   {
-    "image": "sit.png"
+    "image": "sit.png",
+    "contain": true
   },
   {
     "image": "sleep.gif"
   },
   {
-    "image": "smile.png",
-    "contain": true
+    "image": "smile.gif"
   },
   {
-    "image": "tok.png",
+    "image": "think.png",
     "contain": true
   },
   {
     "image": "walk.png",
-    "contain": true
-  },
-  {
-    "image": "watch.png",
     "contain": true
   }
 ]
