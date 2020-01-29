@@ -4,7 +4,7 @@
 
 <div align="center">
   <img src="./docs/assets/profile.png" alt="Zepeto of junhoyeo" height="256px" width="256px" />
-  <blockquote>Hello, this is my trendy new [résumé](https://trendy-resume.now.sh/). Wanna make one for yourself too?</blockquote>
+  <blockquote>Hello, this is my trendy new <a href="https://trendy-resume.now.sh/">résumé</a>. Wanna make one for yourself too?</blockquote>
 </div>
 
 [![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/dwyl/esta/issues)
