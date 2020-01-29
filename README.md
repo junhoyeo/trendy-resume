@@ -43,8 +43,16 @@ yarn dev
 # run the dev server in your local
 ```
 
-### 2. Configurations
-Now, look through the files and feel free to customize for yourself!
+### 3. Setup deployment
+
+> ⚠️ This project uses Next.js for server-side rendering!!! ⚠️
+>
+> Keep this in mind while developing features related to paging, rendering, generating values etc. 👍
+
+You can deploy to services that supports Next.js like [ZEIT](https://zeit.co/), Github Pages, Heroku.
+
+### 4. Configurations
+Now, look through the files and feel free to customize for yourself! 🔥
 
 I'm still working on a more proper documentation and make more things customizable, so you can either wait, hack, or help me by contributing via [Issues](https://github.com/junhoyeo/trendy-resume/issues) and [Pull Requests](https://github.com/junhoyeo/trendy-resume/pulls)!
 

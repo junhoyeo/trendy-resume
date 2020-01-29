@@ -43,8 +43,16 @@ yarn dev
 # 개발 서버를 시작합니다. (npm run dev)
 ```
 
-### 2. Configurations
-이제 파일을 훑어보면서 마음껏 바꿔도 좋아요!
+### 3. 배포 설정하기
+
+> ⚠️ 이 프로젝트는 Next.js를 사용합니다! ⚠️
+>
+> 페이지를 추가하거나, 랜덤 값을 생성하거나, 렌더링 관련 기능을 개발하실 때 참고해 주세요! 👍
+
+Next.js를 지원하는 [ZEIT](https://zeit.co/), Github Pages, Heroku 등의 서비스를 사용하면 빠르게 배포할 수 있어요!
+
+### 4. 설정 바꾸기
+이제 파일을 훑어보면서 마음껏 바꿔도 좋아요! 🔥
 
 빠른 시일 내에 자세한 문서와 함께 더 많은 것들을 쉽게 설정해서 적용할 수 있도록 해 드릴게요! [Issues](https://github.com/junhoyeo/trendy-resume/issues)와 [Pull Requests](https://github.com/junhoyeo/trendy-resume/pulls)를 통해서 저를 도와줄 수 있어요! 😘
 
