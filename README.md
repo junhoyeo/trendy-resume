@@ -9,6 +9,8 @@
 
 [![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/dwyl/esta/issues)
 
+- [🇰🇷 한국어](./README.ko.md)
+
 ## 👀 Preview
 
 <img alt="preview-from-page-top" src="./docs/assets/preview-top.png" width="48%" style="border-right:1px solid #dbedff" /><img alt="preview-from-page-bottom" src="./docs/assets/preview-bottom.png" width="48%" />
@@ -56,11 +58,11 @@ I'm still working on a more proper documentation and make more things customizab
 | Description after Catchphrase | [Carousel](./src/components/organisms/Carousel.tsx) component | `불가능한 프론트엔드는 없다고 믿습니다.`, `그렇기 때문에 오늘도 성장하기 위한 노력을 하고 있죠.` |
 
 #### 🕵️‍♂️ Navigation
-Currently inside [Navbar]() component(will detach soon).
+Currently inside [Navbar](./src/components/organisms/Navbar.tsx) component(will detach soon).
 
 | Field | Description | Example |
 | ----- | ----------- | ------- |
-| `name` | Name of the description | `Home`, `My Stacks`, `Recent` |
+| `name` | Name of the navigation | `Home`, `My Stacks`, `Recent` |
 | `href` | Location to move after navigation item is clicked(usually bookmarks with `id`) | `#home`, `#stacks`, `#recent` |
 
 #### 👩🏼‍💻 Avatars
