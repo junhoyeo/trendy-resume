@@ -7,9 +7,16 @@
   <blockquote>Hello, this is my trendy new [résumé](https://trendy-resume.now.sh/). Wanna make one for yourself too?</blockquote>
 </div>
 
+[![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/dwyl/esta/issues)
+
 ## 👀 Preview
 
 <img alt="preview-from-page-top" src="./docs/assets/preview-top.png" width="48%" style="border-right:1px solid #dbedff" /><img alt="preview-from-page-bottom" src="./docs/assets/preview-bottom.png" width="48%" />
+
+## ❤️ Use case
+Add yours too! 🥰
+
+- [trendy-resume.now.sh](https://trendy-resume.now.sh)
 
 ## 🏗 Make one for youself!
 
@@ -39,7 +46,7 @@ Now, look through the files and feel free to customize for yourself!
 
 I'm still working on a more proper documentation and make more things customizable, so you can either wait, hack, or help me by contributing via [Issues](https://github.com/junhoyeo/trendy-resume/issues) and [Pull Requests](https://github.com/junhoyeo/trendy-resume/pulls)!
 
-### 👋 Infomation
+#### 👋 Infomation
 
 | Name | Location | Current Placeholder |
 | ---- | -------- | ------------------- |
@@ -48,7 +55,7 @@ I'm still working on a more proper documentation and make more things customizab
 | Catchphrase | [Carousel](./src/components/organisms/Carousel.tsx) component | `Frontend is INEVITABLE™` |
 | Description after Catchphrase | [Carousel](./src/components/organisms/Carousel.tsx) component | `불가능한 프론트엔드는 없다고 믿습니다.`, `그렇기 때문에 오늘도 성장하기 위한 노력을 하고 있죠.` |
 
-### 🕵️‍♂️ Navigation
+#### 🕵️‍♂️ Navigation
 Currently inside [Navbar]() component(will detach soon).
 
 | Field | Description | Example |
@@ -56,24 +63,34 @@ Currently inside [Navbar]() component(will detach soon).
 | `name` | Name of the description | `Home`, `My Stacks`, `Recent` |
 | `href` | Location to move after navigation item is clicked(usually bookmarks with `id`) | `#home`, `#stacks`, `#recent` |
 
-### 👩🏼‍💻 Avatars
+#### 👩🏼‍💻 Avatars
 
-#### About
+##### About
 
 | Name | Description | Location |
 | ---- | ----------- | ------- |
 | Config | The JSON config file that contains list of objects | [src/data/avatar.json](./src/data/avatar.json) |
 | Type | Typing of a single object | [src/utils/types.ts](./src/utils/types.ts) (interface `IAvatar`) |
 
-#### Fields
+##### Fields
 
 | Field | Description | Required |
 | ----- | ----------- | -------- |
 | `image` | file name of the avatar file, located in the [public/static/avatar](https://github.com/junhoyeo/trendy-resume/tree/master/public/static/avatar) folder. | `true` |
 | `contain` | `object-fit` will be `contain` in the rendered img tag if this field is set | `false` |
 
-### 📚 Stacks
+#### 📚 Stacks
 
-### 📦 Products
+#### 📦 Products
 
-### 🤝 Social Links
+#### 🤝 Social Links
+
+## 🍭 Sweet Tips
+These are the materials I used for designing this blog.
+
+| Service or Material | Description | Alternatives |
+| ------------------- | ----------- | ------------ |
+| [Zepeto](https://zepeto.me/) | You can easily make a cool avatar like youself, and take pictures | Maybe some facial-emoji solutions? |
+| [Smartmockups](https://smartmockups.com/) | Some of the mockups was generated here. It's really great but trial version (yeah, like me) includes a small watermark in the corner, also it's hard to find multiple device mockups with the same machine. | Photoshop is the best, really. |
+
+Feel free to add yours too!
