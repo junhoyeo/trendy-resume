@@ -101,6 +101,6 @@ These are the materials I used for designing this blog.
 | Service or Material | Description | Alternatives |
 | ------------------- | ----------- | ------------ |
 | [Zepeto](https://zepeto.me/) | You can easily make a cool avatar like youself, and take pictures | Maybe some facial-emoji solutions? |
-| [Smartmockups](https://smartmockups.com/) | Some of the mockups was generated here. It's really great but trial version (yeah, like me) includes a small watermark in the corner, also it's hard to find multiple device mockups with the same machine. | Photoshop is the best, really. |
+| [Smartmockups](https://smartmockups.com/) | Some of the mockups was generated here. It's really great but trial version like mine includes a small watermark in the corner, also it's hard to find multiple device mockups with the same machine. | Photoshop is the best, really. |
 
 Feel free to add yours too!
