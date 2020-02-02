@@ -34,6 +34,16 @@ export const Home: React.FC = () => (
       title="📖 블로그 살펴보기"
       products={posts}
     />
+    <Footer>
+      <FooterText>
+        © 2020
+        {' '}
+        <a href="https://github.com/junhoyeo/trendy-resume" target="_blank">
+          Junho Yeo
+        </a>
+        . All rights reserved.
+      </FooterText>
+    </Footer>
   </Content>
 );
 
@@ -43,4 +53,18 @@ const Content = styled.main`
   display: flex;
   flex-direction: column;
   align-items: center;
+`;
+
+const Footer = styled.footer`
+  padding: 1.5rem 0;
+`;
+
+const FooterText = styled.span`
+  font-weight: 900;
+  color: rgba(30,144,255,0.65);
+
+  a {
+    color: dodgerblue;
+    text-decoration: none;
+  }
 `;
