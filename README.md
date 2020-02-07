@@ -12,13 +12,15 @@
 
 - [🇰🇷 한국어](./README.ko.md)
 
+## 👀 Preview
+
 ![mockup for imac - 1](./docs/assets/mockups/imac-1.png)
 ![mockup for imac - 2](./docs/assets/mockups/imac-2.png)
 ![mockup for ipad - 1](./docs/assets/mockups/ipad-1.png)
 
-## 👀 Preview
-
-<img alt="preview-from-page-top" src="./docs/assets/preview-top.png" width="48%" style="border-right:1px solid #dbedff" /><img alt="preview-from-page-bottom" src="./docs/assets/preview-bottom.png" width="48%" />
+<div align="center">
+  <img alt="preview-from-page-top" src="./docs/assets/preview-top.png" width="48%" style="border-right:1px solid #dbedff" /> <img alt="preview-from-page-bottom" src="./docs/assets/preview-bottom.png" width="48%" />
+</div>
 
 ## ❤️ Use case
 Add yours too! 🥰
