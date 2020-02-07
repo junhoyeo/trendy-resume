@@ -8,8 +8,13 @@
 </div>
 
 [![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/dwyl/esta/issues)
+[![Typed with TypeScript](https://badgen.net/badge/icon/Typed?icon=typescript&label&labelColor=555555&color=blue)](https://github.com/microsoft/TypeScript)
 
 - [🇺🇸 English](./README.ko.md)
+
+![mockup for imac - 1](./docs/assets/mockups/imac-1.png)
+![mockup for imac - 2](./docs/assets/mockups/imac-2.png)
+![mockup for ipad - 1](./docs/assets/mockups/ipad-1.png)
 
 ## 👀 미리보기
 
