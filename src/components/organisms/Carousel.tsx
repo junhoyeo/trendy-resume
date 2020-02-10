@@ -6,7 +6,14 @@ import { TitleText } from '../atoms/Text';
 import Label from '../molecules/Label';
 
 import getRandomSelect from '../../utils/getRandomSelect';
-import { IAvatar } from '../../utils/types';
+import { IInfo, IAvatar } from '../../utils/types';
+
+const {
+  catchphrase: {
+    text: catchphraseText,
+    description: catchphraseDesc,
+  },
+}: IInfo = require('../../data/info.json');
 
 const avatars: IAvatar[] = require('../../data/avatar.json');
 
@@ -24,15 +31,13 @@ export const Carousel: React.FC = () => {
     <CarouselContainer>
       <Content>
         <Title>
-          Frontend is<br />
-          INEVITABLE™
+          {catchphraseText.split('\n').map((text) => (
+            <span>{text}</span>
+          ))}
         </Title>
-        <Desc>
-          불가능한 프론트엔드는 없다고 믿습니다.
-        </Desc>
-        <Desc>
-          그렇기 때문에 오늘도 성장하기 위한 노력을 하고 있죠.
-        </Desc>
+        {catchphraseDesc.map((desc) => (
+          <Desc>{desc}</Desc>
+        ))}
         <Profile
           src={`static/avatar/${profile}`}
           draggable="false"
@@ -65,6 +70,8 @@ const Title = styled(TitleText)`
   margin: 0;
   margin-bottom: 0.5rem;
   line-height: 1.25;
+  display: flex;
+  flex-direction: column;
 
   @media (max-width: 768px) {
     font-size: 32px;

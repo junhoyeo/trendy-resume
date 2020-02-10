@@ -1,3 +1,12 @@
+export interface IInfo {
+  title: string;
+  author: string;
+  catchphrase: {
+    text: string;
+    description: string[];
+  }
+}
+
 export interface ILink {
   icon: string;
   text: string;
