@@ -2,7 +2,7 @@
   {
     "name": "React & React Native",
     "image": "react.png",
-    "skill": 80,
+    "skill": 90,
     "color": "#52C1DE",
     "desc": "아이디어가 떠오르면 바로 구현해 낼 수 있습니다. Hooks를 사용해서 깔끔한 코드를 (보통 타입스크립트로) 작성합니다."
   },
