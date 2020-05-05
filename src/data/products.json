@@ -1,5 +1,134 @@
 [
   {
+    "image": "static/products/zoom.jpg",
+    "title": "줌 당겨 줌니다. ZOOM~!",
+    "parts": [
+      "BACKEND",
+      "DESIGN"
+    ],
+    "category": "웹 서비스",
+    "place": "개인 프로젝트",
+    "date": "2020.04.24 ~ 2020.05.06",
+    "desc": "코로나19로 인해 시작된 온라인 수업, 친구들과 후배들이 들어가야 하는 수업의 시간표를 찾아 헤메지 않도록 FCM Cloud Messaging을 통한 웹 푸시로 수업 전 과목과 줌 링크를 안내하는 서비스를 만들었습니다.",
+    "links": [
+      {
+        "icon": "fa fa-globe",
+        "text": "서비스 이용하기",
+        "href": "https://zoom.dimigo.link/"
+      },
+      {
+        "icon": "fab fa-github",
+        "text": "프론트엔드 코드 보기",
+        "href": "https://github.com/junhoyeo/dimi-online-notification-frontend"
+      },
+      {
+        "icon": "fab fa-github",
+        "text": "백엔드 코드 보기",
+        "href": "https://github.com/cokia/dimi-online-notification-backend"
+      }
+    ]
+  },
+  {
+    "image": "static/products/bubble-tabbar.jpg",
+    "title": "알엔에서 뽀짝한 버블 탭 바 만들기",
+    "parts": [
+      "APP",
+      "PACKAGE"
+    ],
+    "category": "애플리케이션 / 패키지",
+    "place": "개인 프로젝트",
+    "date": "2020.04.11 ~ 2020.04.25",
+    "desc": "네이티브로는 많은 버블 탭 바 컴포넌트 라이브러리, 리액트 네이티브용 모듈은 없어서 만들었습니다. React Navigation v5를 지원하도록 했고, useAnimation 훅으로 애니메이션을 넣었습니다.",
+    "links": [
+      {
+        "icon": "fas fa-box-open",
+        "text": "패키지 보기",
+        "href": "https://www.npmjs.com/package/react-native-bubble-tabbar"
+      },
+      {
+        "icon": "fab fa-github",
+        "text": "패키지 코드 보기",
+        "href": "https://github.com/junhoyeo/react-native-bubble-tabbar"
+      }
+    ]
+  },
+  {
+    "image": "static/products/inudevs-bucket.jpg",
+    "title": "이누와 함께 이뤄 나갈 것들.",
+    "parts": [
+      "FRONTEND",
+      "DESIGN"
+    ],
+    "category": "웹 서비스",
+    "place": "한국디지털미디어고등학교 아이디어 실험 동아리, 이누",
+    "date": "2020.03.28",
+    "desc": "2020년, 일반동아리가 된 한국디지털미디어고등학교 아이디어 실험 동아리 '이누'의 버켓리스트 웹사이트입니다.",
+    "links": [
+      {
+        "icon": "fa fa-globe",
+        "text": "서비스 이용하기",
+        "href": "http://bucket.inudevs.com/"
+      },
+      {
+        "icon": "fab fa-github",
+        "text": "프론트엔드 코드 보기",
+        "href": "https://github.com/inudevs/bucket-list-2020"
+      }
+    ]
+  },
+  {
+    "image": "static/products/gifty.jpg",
+    "title": "받았다가 잊어버리고 못 써서 울지 않기. 기프티콘 관리 서비스, 기프티",
+    "parts": [
+      "PERSONAL"
+    ],
+    "category": "웹 서비스",
+    "place": "개인 프로젝트",
+    "date": "2020.03 ~",
+    "desc": "친구에게 받은 기프티콘을 잊어버리는 바람에 사용하지 못한 슬프고 서려운 기억을 바탕으로 시작한 프로젝트입니다. OCR 엔진인 테서렉트를 이용해서 기프티콘의 정보를 파싱하고, 만료일 전에 알림을 보내줍니다.",
+    "links": [
+      {
+        "icon": "fa fa-globe",
+        "text": "서비스 이용하기",
+        "href": "https://gifty.now.sh/"
+      },
+      {
+        "icon": "fab fa-github",
+        "text": "프로젝트 코드 보기",
+        "href": "https://github.com/junhoyeo/gifty"
+      }
+    ]
+  },
+  {
+    "image": "static/products/spes.jpg",
+    "title": "새해 소망 이루기, 올해는 Spes™와 함께",
+    "parts": [
+      "FRONTEND",
+      "DESIGN"
+    ],
+    "category": "웹 서비스",
+    "place": "Hello20thon 온라인 해커톤 최우수상(1위)",
+    "date": "2020.02.01 ~ 2020.02.06",
+    "desc": "새해 목표를 공유할 수 있는 '목표방'을 개설하고, 친구들을 SNS를 통해 초대한 뒤, 매일 인증샷이 포함된 진행 상황을 올리고 투표를 진행하며 다 함께 이뤄나가기 위한 노력을 해 나가는 서비스입니다.",
+    "links": [
+      {
+        "icon": "fa fa-globe",
+        "text": "서비스 이용하기",
+        "href": "https://spes.now.sh"
+      },
+      {
+        "icon": "fab fa-github",
+        "text": "프론트엔드 코드 보기",
+        "href": "https://github.com/junhoyeo/spes-frontend"
+      },
+      {
+        "icon": "fab fa-github",
+        "text": "백엔드 코드 보기",
+        "href": "https://github.com/MinSeungHyun/spes-backend"
+      }
+    ]
+  },
+  {
     "image": "static/products/wadong.png",
     "title": "나에게 추억이란 복덩이를, WADONG",
     "parts": [
