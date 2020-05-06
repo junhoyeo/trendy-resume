@@ -77,6 +77,18 @@
     ]
   },
   {
+    "image": "static/products/crypto-bot.png",
+    "title": "암호화폐 거래 봇 모니터링 앱",
+    "parts": [
+      "FRONTEND",
+      "BLOCKCHAIN"
+    ],
+    "category": "데스크탑 애플리케이션",
+    "place": "아웃소싱",
+    "date": "2020.03.05 ~ 2020.04.30",
+    "desc": "암호화폐 거래 봇의 상태와 차트를 모니터링하고 설정을 변경할 수 있는 데스크탑 앱을 제작해 납품했습니다. Electron과 React를 사용해서 완성도 높고 정교한 UI를 빠르게 제작할 수 있었습니다."
+  },
+  {
     "image": "static/products/gifty.jpg",
     "title": "받았다가 잊어버리고 못 써서 울지 않기. 기프티콘 관리 서비스, 기프티",
     "parts": [
