@@ -1,5 +1,18 @@
 [
   {
+    "image": "static/products/motorgraph.png",
+    "title": "모터그래프 커뮤니티 게시판 제작",
+    "parts": [
+      "FRONTEND",
+      "SSR"
+    ],
+    "category": "웹 서비스",
+    "place": "아웃소싱",
+    "date": "2020.05 ~ 2020.07",
+    "desc": "기존에 XE로 되어있던 모터그래프 커뮤니티를 리뉴얼 했습니다. 프론트엔드는 React.js와 Next.js로 SSR을 적용했습니다. 이 중 게시판 페이지네이션과 IE 지원을 맡았습니다.",
+    "links": []
+  },
+  {
     "image": "static/products/zoom.jpg",
     "title": "줌 당겨 줌니다. ZOOM~!",
     "parts": [
