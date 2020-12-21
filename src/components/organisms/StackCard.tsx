@@ -11,7 +11,7 @@ export const StackCard: React.FC<IStack> = ({
   name,
   skill,
   image,
-  desc,
+  description,
   color = 'dodgerblue',
 }) => {
   return (
@@ -19,7 +19,7 @@ export const StackCard: React.FC<IStack> = ({
       <StackImage src={`static/stacks/${image}`} draggable="false" />
       <StackInfo>
         <StackName>{name}</StackName>
-        <StackDescription>{desc}</StackDescription>
+        <StackDescription>{description}</StackDescription>
         <StackProgressBar color={color} progress={skill} />
       </StackInfo>
     </StackContainer>

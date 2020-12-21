@@ -39,7 +39,7 @@ export const ProductCard: React.FC<IProductCard> = ({
             <CardPart key={`part-${idx}`}>{part}</CardPart>
           ))}
         </CardPartList>
-        <OverlayCard hide={!overlay} desc={description} links={links} />
+        <OverlayCard hide={!overlay} description={description} links={links} />
       </CardImage>
       <CardInfo>
         <CardCategory className="category">{category}</CardCategory>

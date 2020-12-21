@@ -32,8 +32,8 @@ export const Carousel: React.FC = () => {
             <span key={textIndex}>{text}</span>
           ))}
         </Title>
-        {catchphraseDescription.map((desc, descIndex) => (
-          <Description key={descIndex}>{desc}</Description>
+        {catchphraseDescription.map((description, descriptionIndex) => (
+          <Description key={descriptionIndex}>{description}</Description>
         ))}
         <Profile
           src={`static/avatar/${profile}`}

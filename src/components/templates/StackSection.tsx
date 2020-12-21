@@ -29,7 +29,7 @@ export const StackSection: React.FC<StackSectionProps> = ({
             image={image}
             skill={skill}
             color={color}
-            desc={desc}
+            description={description}
           />
         ))}
       </StackList>
