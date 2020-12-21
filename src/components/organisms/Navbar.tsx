@@ -5,13 +5,7 @@ import Section from '../atoms/Section';
 import NavItem from '../molecules/NavItem';
 
 import { INavigation } from '../../utils/types';
-
-const navigations: INavigation[] = [
-  { name: '홈', href: '#' },
-  { name: '개발 스택', href: '#stacks' },
-  { name: '최근 프로젝트', href: '#recent' },
-  { name: '블로그 살펴보기', href: '#blog' },
-];
+import navigations from '../../data/navigations.json';
 
 export const Navbar: React.FC = () => {
   const [selectedHref, setSelectedHref] = useState<string>('#');
@@ -24,7 +18,7 @@ export const Navbar: React.FC = () => {
   return (
     <NavbarContainer>
       <NavList>
-        {navigations.map(({ name, href }, idx) => (
+        {navigations.map(({ name, href }: INavigation, idx) => (
           <NavItem
             key={`navitem-${idx}`}
             name={name}
