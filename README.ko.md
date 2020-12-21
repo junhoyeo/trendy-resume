@@ -94,7 +94,7 @@ Next.js를 지원하는 [ZEIT](https://zeit.co/), Github Pages, Heroku 등의 �
 
 | 필드 이름 | 설명 | 필수 여부 |
 | ----- | ----------- | -------- |
-| `image` | [public/static/avatar](https://github.com/junhoyeo/trendy-resume/tree/master/public/static/avatar) 폴더에 있는 아바타(프로필 사진) 파일의 이름 | `true` |
+| `image` | [public/static/avatar](https://github.com/junhoyeo/trendy-resume/tree/main/public/static/avatar) 폴더에 있는 아바타(프로필 사진) 파일의 이름 | `true` |
 | `contain` | `true`면 렌더링된 이미지 태그의 `object-fit` 스타일이 `contain`로 설정됨 | `false` |
 
 #### 📚 스택

@@ -26,6 +26,7 @@
 Add yours too! 🥰
 
 - [trendy-resume.now.sh](https://trendy-resume.now.sh)
+- [kdw.now.sh](https://kdw.now.sh)
 
 ## 🏗 Make one for youself!
 
@@ -93,7 +94,7 @@ Currently inside [Navbar](./src/components/organisms/Navbar.tsx) component(will 
 
 | Field | Description | Required |
 | ----- | ----------- | -------- |
-| `image` | file name of the avatar file, located in the [public/static/avatar](https://github.com/junhoyeo/trendy-resume/tree/master/public/static/avatar) folder. | `true` |
+| `image` | file name of the avatar file, located in the [public/static/avatar](https://github.com/junhoyeo/trendy-resume/tree/main/public/static/avatar) folder. | `true` |
 | `contain` | `object-fit` will be `contain` in the rendered img tag if this field is set | `false` |
 
 #### 📚 Stacks
