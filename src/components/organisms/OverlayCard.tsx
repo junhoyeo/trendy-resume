@@ -40,7 +40,9 @@ export const OverlayCard: React.FC<OverlayCardProps> = ({
         {links.map(({ icon, text, href }, idx) => (
           <Link
             key={`link-${idx}`}
-            onClick={(event) => onClickLink(event, href)}
+            onClick={(event: React.MouseEvent<HTMLLIElement>) =>
+              onClickLink(event, href)
+            }
           >
             <LinkIcon icon={icon} />
             <LinkText>{text}</LinkText>
