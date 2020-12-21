@@ -4,13 +4,14 @@
 
 <div align="center">
   <img src="./docs/assets/profile.png" alt="Zepeto of junhoyeo" height="256px" width="256px" />
-  <blockquote>Hello, this is my trendy new <a href="https://trendy-resume.now.sh/">résumé</a>. Wanna make one for yourself too?</blockquote>
+  <blockquote>Hello, this is my trendy new <a href="https://trendy-resume.now.sh/">résumé</a>. Wanna make one for yourself too?<br />
+  <small><i>최근 시간적인 문제로 개인 이력서를 업데이트하고 있지 못하고 있어서,<br />혹시라도 <strong>제 최신 이력서 또는 영문 이력서</strong>를 필요로 하는 분이 계시다면, <a href="https://github.com/junhoyeo/trendy-resume/issues">여기</a>에 이슈를 남겨 주시거나 개인적으로 연락해주세요 🙏</i></small></blockquote>
 </div>
 
 [![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/dwyl/esta/issues)
 [![Typed with TypeScript](https://badgen.net/badge/icon/Typed?icon=typescript&label&labelColor=555555&color=blue)](https://github.com/microsoft/TypeScript)
 
-- [🇺🇸 English](./README.ko.md)
+- [🇺🇸 English (영어)](./README.ko.md)
 
 ## 👀 미리보기
 
@@ -99,7 +100,7 @@ Next.js를 지원하는 [ZEIT](https://zeit.co/), Github Pages, Heroku 등의 �
 
 #### 📚 스택
 
-#### 📦 상품 ~~이라는 컨셉~~
+#### 📦 상품 ~~이라는 컨셉 (프로덕트?)~~
 
 #### 🤝 소셜 링크 (페이지 상단 우측에 표시됩니다!)
 

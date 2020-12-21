@@ -4,13 +4,15 @@
 
 <div align="center">
   <img src="./docs/assets/profile.png" alt="Zepeto of junhoyeo" height="256px" width="256px" />
-  <blockquote>Hello, this is my trendy new <a href="https://trendy-resume.now.sh/">résumé</a>. Wanna make one for yourself too?</blockquote>
+  <blockquote>Hello, this is my trendy new <a href="https://trendy-resume.now.sh/">résumé</a>. Wanna make one for yourself too?<br />
+  <small><i>If any of you are here for <strong>my latest(or English)</strong> résumé, please leave an issue <a href="https://github.com/junhoyeo/trendy-resume/issues">here</a> or contact me for updates,<br />since I don't have much time to keep track of my works nowadays. 🙏</i></small>
+  </blockquote>
 </div>
 
 [![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/dwyl/esta/issues)
 [![Typed with TypeScript](https://badgen.net/badge/icon/Typed?icon=typescript&label&labelColor=555555&color=blue)](https://github.com/microsoft/TypeScript)
 
-- [🇰🇷 한국어](./README.ko.md)
+- [🇰🇷 한국어 (Korean)](./README.ko.md)
 
 ## 👀 Preview
 
@@ -73,6 +75,8 @@ I'm still working on a more proper documentation and make more things customizab
 | Catchphrase | [Carousel](./src/components/organisms/Carousel.tsx) component | `Frontend is INEVITABLE™` |
 | Description after Catchphrase | [Carousel](./src/components/organisms/Carousel.tsx) component | `불가능한 프론트엔드는 없다고 믿습니다.`, `그렇기 때문에 오늘도 성장하기 위한 노력을 하고 있죠.` |
 
+#### 🤝 Social Links
+
 #### 🕵️‍♂️ Navigation
 Currently inside [Navbar](./src/components/organisms/Navbar.tsx) component(will detach soon).
 
@@ -82,7 +86,6 @@ Currently inside [Navbar](./src/components/organisms/Navbar.tsx) component(will 
 | `href` | Location to move after navigation item is clicked(usually bookmarks with `id`) | `#home`, `#stacks`, `#recent` |
 
 #### 👩🏼‍💻 Avatars
-
 ##### About
 
 | Name | Description | Location |
@@ -99,9 +102,57 @@ Currently inside [Navbar](./src/components/organisms/Navbar.tsx) component(will 
 
 #### 📚 Stacks
 
+```json
+[
+  {
+    "name": "React & React Native",
+    "image": "react.png",
+    "skill": 90,
+    "color": "#52C1DE",
+    "description": "아이디어가 떠오르면 바로 구현해 낼 수 있습니다. Hooks를 사용해서 깔끔한 코드를 (보통 타입스크립트로) 작성합니다."
+  }
+]
+```
+
+![Rendered stack](./docs/assets/configurations/stack.png)
+
 #### 📦 Products
 
-#### 🤝 Social Links
+```json
+[
+ {
+    "image": "static/products/danim.png",
+    "title": "세상을 거닐다, 다님.",
+    "parts": [
+      "APP",
+      "DESIGN"
+    ],
+    "category": "애플리케이션",
+    "place": "제 19회 앱잼 - 생활 부문 최우수상(1위)",
+    "date": "2019.12.21 ~ 2019.12.22",
+    "description": "스스로 또는 소중한 사람에게, 특별한 여행을 선물할 수 있도록 도와주는 앱입니다. 맞춤형 여행 상품을 제공하고 선물할 수 있게 합니다. 인앱 UI를 디자인한 뒤 React Native를 이용해 모바일 앱을 제작하는 것을 담당했습니다.",
+    "links": [
+      {
+        "icon": "fab fa-github",
+        "text": "모바일 앱 코드 보기",
+        "href": "https://github.com/junhoyeo"
+      },
+      {
+        "icon": "fab fa-github",
+        "text": "백엔드 코드 보기",
+        "href": "https://github.com/junhoyeo"
+      }
+    ]
+  }
+]
+```
+
+<div align="center">
+  <img alt="Rendered product card" src="./docs/assets/configurations/product.png" width="712" />
+</div>
+
+#### 📖 Posts
+All models/fields are same as products.
 
 ## 🍭 Sweet Tips
 These are the materials I used for designing this blog.
