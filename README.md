@@ -64,9 +64,12 @@ You can deploy to services that supports Next.js like [ZEIT](https://zeit.co/), 
 ### 4. Configurations
 Now, look through the files and feel free to customize for yourself! 🔥
 
+## 🔍 Documentation
 I'm still working on a more proper documentation and make more things customizable, so you can either wait, hack, or help me by contributing via [Issues](https://github.com/junhoyeo/trendy-resume/issues) and [Pull Requests](https://github.com/junhoyeo/trendy-resume/pulls)!
 
-#### 👋 Infomation
+### 👋 Infomation
+
+![Rendered header](./docs/assets/configurations/header.png)
 
 | Name | Location | Current Placeholder |
 | ---- | -------- | ------------------- |
@@ -75,9 +78,9 @@ I'm still working on a more proper documentation and make more things customizab
 | Catchphrase | [Carousel](./src/components/organisms/Carousel.tsx) component | `Frontend is INEVITABLE™` |
 | Description after Catchphrase | [Carousel](./src/components/organisms/Carousel.tsx) component | `불가능한 프론트엔드는 없다고 믿습니다.`, `그렇기 때문에 오늘도 성장하기 위한 노력을 하고 있죠.` |
 
-#### 🤝 Social Links
+### 🤝 Social Links
 
-#### 🕵️‍♂️ Navigation
+### 🕵️‍♂️ Navigation
 Currently inside [Navbar](./src/components/organisms/Navbar.tsx) component(will detach soon).
 
 | Field | Description | Example |
@@ -85,22 +88,22 @@ Currently inside [Navbar](./src/components/organisms/Navbar.tsx) component(will 
 | `name` | Name of the navigation | `Home`, `My Stacks`, `Recent` |
 | `href` | Location to move after navigation item is clicked(usually bookmarks with `id`) | `#home`, `#stacks`, `#recent` |
 
-#### 👩🏼‍💻 Avatars
-##### About
+### 👩🏼‍💻 Avatars
+#### About
 
 | Name | Description | Location |
 | ---- | ----------- | ------- |
 | Config | The JSON config file that contains list of objects | [src/data/avatar.json](./src/data/avatar.json) |
 | Type | Typing of a single object | [src/utils/types.ts](./src/utils/types.ts) (interface `IAvatar`) |
 
-##### Fields
+#### Fields
 
 | Field | Description | Required |
 | ----- | ----------- | -------- |
 | `image` | file name of the avatar file, located in the [public/static/avatar](https://github.com/junhoyeo/trendy-resume/tree/main/public/static/avatar) folder. | `true` |
 | `contain` | `object-fit` will be `contain` in the rendered img tag if this field is set | `false` |
 
-#### 📚 Stacks
+### 📚 Stacks
 
 ```json
 [
@@ -116,7 +119,7 @@ Currently inside [Navbar](./src/components/organisms/Navbar.tsx) component(will 
 
 ![Rendered stack](./docs/assets/configurations/stack.png)
 
-#### 📦 Products
+### 📦 Products
 
 ```json
 [
@@ -151,7 +154,7 @@ Currently inside [Navbar](./src/components/organisms/Navbar.tsx) component(will 
   <img alt="Rendered product card" src="./docs/assets/configurations/product.png" width="712" />
 </div>
 
-#### 📖 Posts
+### 📖 Posts
 All models/fields are same as products.
 
 ## 🍭 Sweet Tips
