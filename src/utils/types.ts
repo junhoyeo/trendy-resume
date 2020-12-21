@@ -1,3 +1,12 @@
+export interface IInfo {
+  title: string;
+  author: string;
+  catchphrase: {
+    text: string;
+    description: string[];
+  };
+}
+
 export interface ILink {
   icon: string;
   text: string;
@@ -11,7 +20,7 @@ export interface IProduct {
   place?: string;
   date?: string;
   image: string;
-  desc?: string;
+  description?: string;
   links?: ILink[];
 }
 
@@ -20,7 +29,7 @@ export interface IStack {
   image: string;
   skill: number;
   color: string;
-  desc: string;
+  description: string;
 }
 
 export interface ISocial {

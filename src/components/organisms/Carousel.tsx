@@ -6,7 +6,11 @@ import { TitleText } from '../atoms/Text';
 import Label from '../molecules/Label';
 
 import getRandomSelect from '../../utils/getRandomSelect';
-import { IAvatar } from '../../utils/types';
+import { IInfo, IAvatar } from '../../utils/types';
+
+const {
+  catchphrase: { text: catchphraseText, description: catchphraseDescription },
+}: IInfo = require('../../data/info.json');
 
 const avatars: IAvatar[] = require('../../data/avatar.json');
 
@@ -24,15 +28,13 @@ export const Carousel: React.FC = () => {
     <CarouselContainer>
       <Content>
         <Title>
-          Frontend is<br />
-          INEVITABLE™
+          {catchphraseText.split('\n').map((text, textIndex) => (
+            <span key={textIndex}>{text}</span>
+          ))}
         </Title>
-        <Desc>
-          불가능한 프론트엔드는 없다고 믿습니다.
-        </Desc>
-        <Desc>
-          그렇기 때문에 오늘도 성장하기 위한 노력을 하고 있죠.
-        </Desc>
+        {catchphraseDescription.map((description, descriptionIndex) => (
+          <Description key={descriptionIndex}>{description}</Description>
+        ))}
         <Profile
           src={`static/avatar/${profile}`}
           draggable="false"
@@ -65,13 +67,15 @@ const Title = styled(TitleText)`
   margin: 0;
   margin-bottom: 0.5rem;
   line-height: 1.25;
+  display: flex;
+  flex-direction: column;
 
   @media (max-width: 768px) {
     font-size: 32px;
   }
 `;
 
-const Desc = styled(Label)`
+const Description = styled(Label)`
   font-size: 16px;
 
   @media (max-width: 768px) {
@@ -94,11 +98,13 @@ const Profile = styled.img<ProfileProps>`
   box-shadow: 1px 1px 30px 3px rgba(30, 144, 255, 0.15);
   object-fit: cover;
   object-position: top;
-  background-color: #F0C14F;
+  background-color: #f0c14f;
 
-  ${({ contain }) => contain && css`
-    object-fit: contain;
-  `};
+  ${({ contain }) =>
+    contain &&
+    css`
+      object-fit: contain;
+    `};
 
   @media (max-width: 768px) {
     width: 150px;

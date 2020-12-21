@@ -8,19 +8,21 @@ import Navbar from '../organisms/Navbar';
 import Carousel from '../organisms/Carousel';
 
 import openNewWindow from '../../utils/openNewWindow';
-import { ISocial } from '../../utils/types';
+import { IInfo, ISocial } from '../../utils/types';
 
 type HeaderProps = {
   social: ISocial[];
 };
+
+const { title, author }: IInfo = require('../../data/info.json');
 
 export const Header: React.FC<HeaderProps> = ({ social }) => {
   return (
     <>
       <HeaderSection>
         <Brand>
-          <Title>Résumé</Title>
-          <Author>@junhoyeo</Author>
+          <Title>{title}</Title>
+          <Author>@{author}</Author>
         </Brand>
         <IconList>
           {social.map(({ icon, href }, idx) => (

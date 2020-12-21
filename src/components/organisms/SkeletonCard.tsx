@@ -11,7 +11,7 @@ export const SkeletonCard: React.FC = () => (
     place=""
     date=""
     image=""
-    desc=""
+    description=""
     links={[]}
     noClick={true}
   />

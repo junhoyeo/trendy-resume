@@ -9,22 +9,22 @@ import { ILink } from '../../utils/types';
 
 type OverlayCardProps = {
   hide?: boolean;
-  desc?: string;
+  description?: string;
   links: ILink[];
 };
 
 export const OverlayCard: React.FC<OverlayCardProps> = ({
   hide,
-  desc = '',
+  description = '',
   links = [],
 }) => {
   if (hide) {
-    return (null);
+    return null;
   }
 
   const onClickLink = (
     event: React.MouseEvent<HTMLLIElement>,
-    href: string,
+    href: string
   ) => {
     event.stopPropagation();
     openNewWindow(href);
@@ -33,21 +33,19 @@ export const OverlayCard: React.FC<OverlayCardProps> = ({
   return (
     <OverlayContainer>
       <Description>
-        {desc || '설명 없음'}
+        {description || '설명 없음'}
         <Separator />
       </Description>
       <IconList>
         {links.map(({ icon, text, href }, idx) => (
           <Link
             key={`link-${idx}`}
-            onClick={(event) => onClickLink(event, href)}
+            onClick={(event: React.MouseEvent<HTMLLIElement>) =>
+              onClickLink(event, href)
+            }
           >
-            <LinkIcon
-              icon={icon}
-            />
-            <LinkText>
-              {text}
-            </LinkText>
+            <LinkIcon icon={icon} />
+            <LinkText>{text}</LinkText>
           </Link>
         ))}
       </IconList>

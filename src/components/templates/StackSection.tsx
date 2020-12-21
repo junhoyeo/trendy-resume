@@ -9,7 +9,7 @@ import { IStack } from '../../utils/types';
 
 type StackSectionProps = {
   id?: string;
-  title: string,
+  title: string;
   stacks: IStack[];
 };
 
@@ -19,21 +19,17 @@ export const StackSection: React.FC<StackSectionProps> = ({
   stacks,
 }) => {
   return (
-    <Section
-      id={id}
-    >
-      <SectionTitle>
-        {title}
-      </SectionTitle>
+    <Section id={id}>
+      <SectionTitle>{title}</SectionTitle>
       <StackList>
-        {stacks.map(({ name, image, skill, color, desc }, idx) => (
+        {stacks.map(({ name, image, skill, color, description }, idx) => (
           <StackCard
             key={`stack-${idx}`}
             name={name}
             image={image}
             skill={skill}
             color={color}
-            desc={desc}
+            description={description}
           />
         ))}
       </StackList>
@@ -43,8 +39,7 @@ export const StackSection: React.FC<StackSectionProps> = ({
 
 export default StackSection;
 
-const SectionTitle = styled(TitleText)`
-`;
+const SectionTitle = styled(TitleText)``;
 
 const StackList = styled.div`
   display: flex;

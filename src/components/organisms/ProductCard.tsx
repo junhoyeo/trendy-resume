@@ -20,7 +20,7 @@ export const ProductCard: React.FC<IProductCard> = ({
   place = '',
   date = '',
   image,
-  desc = '',
+  description = '',
   links = [],
   noClick = false,
 }) => {
@@ -33,47 +33,20 @@ export const ProductCard: React.FC<IProductCard> = ({
       className={className}
       onClick={noClick ? undefined : onClickCard}
     >
-      <CardImage
-        src={image}
-        className="image"
-      >
+      <CardImage src={image} className="image">
         <CardPartList>
           {parts.map((part, idx) => (
-            <CardPart
-              key={`part-${idx}`}
-            >
-              {part}
-            </CardPart>
+            <CardPart key={`part-${idx}`}>{part}</CardPart>
           ))}
         </CardPartList>
-        <OverlayCard
-          hide={!overlay}
-          desc={desc}
-          links={links}
-        />
+        <OverlayCard hide={!overlay} description={description} links={links} />
       </CardImage>
       <CardInfo>
-        <CardCategory
-          className="category"
-        >
-          {category}
-        </CardCategory>
-        <CardTitle
-          className="title"
-        >
-          {title}
-        </CardTitle>
+        <CardCategory className="category">{category}</CardCategory>
+        <CardTitle className="title">{title}</CardTitle>
         <CardMeta>
-          <CardPlace
-            className="place"
-          >
-            {place}
-          </CardPlace>
-          <CardDate
-            className="date"
-          >
-            {date}
-          </CardDate>
+          <CardPlace className="place">{place}</CardPlace>
+          <CardDate className="date">{date}</CardDate>
         </CardMeta>
       </CardInfo>
     </CardContainer>
@@ -132,9 +105,11 @@ const CardImage = styled.div<CardImageProps>`
   position: relative;
   border-radius: 4px;
 
-  ${({ src }) => src && css`
-    background-image: url(${src});
-  `}
+  ${({ src }) =>
+    src &&
+    css`
+      background-image: url(${src});
+    `}
 
   @media (max-width: 400px) {
     height: 180px;
@@ -192,8 +167,6 @@ const CardMeta = styled.div`
   margin-top: 0.25rem;
 `;
 
-const CardPlace = styled(Label)`
-`;
+const CardPlace = styled(Label)``;
 
-const CardDate = styled(Label)`
-`;
+const CardDate = styled(Label)``;

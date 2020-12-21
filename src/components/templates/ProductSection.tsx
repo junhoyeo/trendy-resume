@@ -11,7 +11,7 @@ import useWindowSize from '../../utils/useWindowSize';
 
 type ProductSectionProps = {
   id?: string;
-  title: string,
+  title: string;
   products: IProduct[];
 };
 
@@ -25,23 +25,25 @@ export const ProductSection: React.FC<ProductSectionProps> = ({
     if (width < 400) {
       return [0, 0];
     }
-    const cardsInOneRow = (width <= 950) ? 2 : 4;
-    return [
-      products.length % cardsInOneRow,
-      cardsInOneRow,
-    ];
+    const cardsInOneRow = width <= 950 ? 2 : 4;
+    return [products.length % cardsInOneRow, cardsInOneRow];
   })(width);
 
   return (
-    <Section
-      id={id}
-    >
-      <SectionTitle>
-        {title}
-      </SectionTitle>
+    <Section id={id}>
+      <SectionTitle>{title}</SectionTitle>
       <ProductList>
         {products.map((product, idx) => {
-          const { category, title, parts, place, date, image, desc, links } = product;
+          const {
+            category,
+            title,
+            parts,
+            place,
+            date,
+            image,
+            description,
+            links,
+          } = product;
           return (
             <ProductCard
               key={`product-${idx}`}
@@ -51,16 +53,15 @@ export const ProductSection: React.FC<ProductSectionProps> = ({
               place={place}
               date={date}
               image={image}
-              desc={desc}
+              description={description}
               links={links}
             />
           );
         })}
-        {!lack || [...Array(cardsInOneRow - lack)].map((_, idx: number) => (
-          <SkeletonCard
-            key={`skeleton-${idx}`}
-          />
-        ))}
+        {!lack ||
+          [...Array(cardsInOneRow - lack)].map((_, idx: number) => (
+            <SkeletonCard key={`skeleton-${idx}`} />
+          ))}
       </ProductList>
     </Section>
   );
@@ -68,8 +69,7 @@ export const ProductSection: React.FC<ProductSectionProps> = ({
 
 export default ProductSection;
 
-const SectionTitle = styled(TitleText)`
-`;
+const SectionTitle = styled(TitleText)``;
 
 const ProductList = styled.div`
   display: flex;
