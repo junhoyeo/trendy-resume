@@ -1,18 +1,23 @@
-import * as React from 'react';
-import { ServerStyleSheet } from 'styled-components';
-import Document, { Head, Main, NextScript, DocumentContext } from 'next/document';
+import * as React from "react";
+import { ServerStyleSheet } from "styled-components";
+import Document, {
+  Html,
+  Head,
+  Main,
+  NextScript,
+  DocumentContext,
+} from "next/document";
 
 type DocumentProps = {
   styleTags: Array<React.ReactElement<{}>>;
 };
 
 export default class CustomDocument extends Document<DocumentProps> {
-
   static async getInitialProps({ renderPage }: DocumentContext) {
     const sheet = new ServerStyleSheet();
 
-    const page = renderPage(App => props =>
-      sheet.collectStyles(<App {...props} />),
+    const page = renderPage((App) => (props) =>
+      sheet.collectStyles(<App {...props} />)
     );
 
     const styleTags = sheet.getStyleElement();
@@ -22,12 +27,10 @@ export default class CustomDocument extends Document<DocumentProps> {
   public render() {
     const { styleTags } = this.props;
     return (
-      <html>
+      <Html>
         <Head>
           {styleTags}
-          <script
-            src="https://kit.fontawesome.com/a42f454688.js"
-          />
+          <script src="https://kit.fontawesome.com/a42f454688.js" />
         </Head>
         <body>
           <div className="root">
@@ -35,7 +38,7 @@ export default class CustomDocument extends Document<DocumentProps> {
           </div>
           <NextScript />
         </body>
-      </html>
+      </Html>
     );
   }
-};
+}

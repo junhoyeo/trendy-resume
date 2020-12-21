@@ -1,25 +1,22 @@
-import React, { useEffect, useState } from 'react';
-import styled, { css } from 'styled-components';
+import React, { useEffect, useState } from "react";
+import styled, { css } from "styled-components";
 
-import { Section } from '../atoms/Section';
-import { TitleText } from '../atoms/Text';
-import Label from '../molecules/Label';
+import { Section } from "../atoms/Section";
+import { TitleText } from "../atoms/Text";
+import Label from "../molecules/Label";
 
-import getRandomSelect from '../../utils/getRandomSelect';
-import { IInfo, IAvatar } from '../../utils/types';
+import getRandomSelect from "../../utils/getRandomSelect";
+import { IInfo, IAvatar } from "../../utils/types";
 
 const {
-  catchphrase: {
-    text: catchphraseText,
-    description: catchphraseDesc,
-  },
-}: IInfo = require('../../data/info.json');
+  catchphrase: { text: catchphraseText, description: catchphraseDesc },
+}: IInfo = require("../../data/info.json");
 
-const avatars: IAvatar[] = require('../../data/avatar.json');
+const avatars: IAvatar[] = require("../../data/avatar.json");
 
 export const Carousel: React.FC = () => {
   const [avatar, setAvatar] = useState<IAvatar>({
-    image: 'default.png',
+    image: "default.png",
     contain: true,
   });
 
@@ -31,12 +28,12 @@ export const Carousel: React.FC = () => {
     <CarouselContainer>
       <Content>
         <Title>
-          {catchphraseText.split('\n').map((text) => (
-            <span>{text}</span>
+          {catchphraseText.split("\n").map((text, textIndex) => (
+            <span key={textIndex}>{text}</span>
           ))}
         </Title>
-        {catchphraseDesc.map((desc) => (
-          <Desc>{desc}</Desc>
+        {catchphraseDesc.map((desc, descIndex) => (
+          <Desc key={descIndex}>{desc}</Desc>
         ))}
         <Profile
           src={`static/avatar/${profile}`}
@@ -101,11 +98,13 @@ const Profile = styled.img<ProfileProps>`
   box-shadow: 1px 1px 30px 3px rgba(30, 144, 255, 0.15);
   object-fit: cover;
   object-position: top;
-  background-color: #F0C14F;
+  background-color: #f0c14f;
 
-  ${({ contain }) => contain && css`
-    object-fit: contain;
-  `};
+  ${({ contain }) =>
+    contain &&
+    css`
+      object-fit: contain;
+    `};
 
   @media (max-width: 768px) {
     width: 150px;
