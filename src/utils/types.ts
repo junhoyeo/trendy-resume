@@ -4,7 +4,7 @@ export interface IInfo {
   catchphrase: {
     text: string;
     description: string[];
-  }
+  };
 }
 
 export interface ILink {
@@ -20,7 +20,7 @@ export interface IProduct {
   place?: string;
   date?: string;
   image: string;
-  desc?: string;
+  description?: string;
   links?: ILink[];
 }
 
@@ -29,7 +29,7 @@ export interface IStack {
   image: string;
   skill: number;
   color: string;
-  desc: string;
+  description: string;
 }
 
 export interface ISocial {

@@ -16,21 +16,11 @@ export const StackCard: React.FC<IStack> = ({
 }) => {
   return (
     <StackContainer>
-      <StackImage
-        src={`static/stacks/${image}`}
-        draggable="false"
-      />
+      <StackImage src={`static/stacks/${image}`} draggable="false" />
       <StackInfo>
-        <StackName>
-          {name}
-        </StackName>
-        <StackDesc>
-          {desc}
-        </StackDesc>
-        <StackProgressBar
-          color={color}
-          progress={skill}
-        />
+        <StackName>{name}</StackName>
+        <StackDescription>{desc}</StackDescription>
+        <StackProgressBar color={color} progress={skill} />
       </StackInfo>
     </StackContainer>
   );
@@ -66,8 +56,7 @@ const StackName = styled(Text)`
   font-weight: 700;
 `;
 
-const StackDesc = styled(Label)`
-`;
+const StackDescription = styled(Label)``;
 
 const StackProgressBar = styled(ProgressBar)`
   margin-top: 0.5rem;
