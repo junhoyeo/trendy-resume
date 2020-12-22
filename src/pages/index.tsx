@@ -16,28 +16,28 @@ const posts: IProduct[] = require('../data/posts.json');
 
 export const Home: React.FC = () => (
   <Content>
-    <Header
-      social={social}
-    />
+    <Header social={social} />
     <StackSection
       id="stacks"
       title="🍰 스택 맛보기"
+      // Stacks
       stacks={stacks}
     />
     <ProductSection
       id="recent"
       title="🌟 최근 활동"
+      // Recent projects
       products={products}
     />
     <ProductSection
       id="blog"
       title="📖 블로그 살펴보기"
+      // Blog
       products={posts}
     />
     <Footer>
       <FooterText>
-        © 2020
-        {' '}
+        © 2021{' '}
         <a href="https://github.com/junhoyeo/trendy-resume" target="_blank">
           Junho Yeo
         </a>
@@ -61,7 +61,7 @@ const Footer = styled.footer`
 
 const FooterText = styled.span`
   font-weight: 900;
-  color: rgba(30,144,255,0.65);
+  color: rgba(30, 144, 255, 0.65);
 
   a {
     color: dodgerblue;
