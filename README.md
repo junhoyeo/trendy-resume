@@ -69,19 +69,111 @@ I'm still working on a more proper documentation and make more things customizab
 
 ### 👋 Infomation
 
+#### Example
+
+```json
+{
+  "title": "Résumé",
+  "author": "junhoyeo",
+  "catchphrase": {
+    "text": "Frontend is \nINEVITABLE™",
+    "description": [
+      "불가능한 프론트엔드는 없다고 믿습니다.",
+      "그렇기 때문에 오늘도 성장하기 위한 노력을 하고 있죠."
+    ]
+  }
+}
+```
+
+#### Preview
+
 ![Rendered header](./docs/assets/configurations/header.png)
 
-| Name | Location | Current Placeholder |
-| ---- | -------- | ------------------- |
-| Title | [Header](./src/components/templates/Header.tsx) component | `Résumé` |
-| Author | [Header](./src/components/templates/Header.tsx) component | `@junhoyeo` |
-| Catchphrase | [Carousel](./src/components/organisms/Carousel.tsx) component | `Frontend is INEVITABLE™` |
-| Description after Catchphrase | [Carousel](./src/components/organisms/Carousel.tsx) component | `불가능한 프론트엔드는 없다고 믿습니다.`, `그렇기 때문에 오늘도 성장하기 위한 노력을 하고 있죠.` |
+#### About
+
+| Name | Description | Location |
+| ---- | ----------- | ------- |
+| Config | The JSON config file | [src/data/info.json](./src/data/info.json) |
+| Type | Typing of object | [src/utils/types.ts](./src/utils/types.ts) (interface `IInfo`) |
+
+#### Fields
+
+| Field | Description | Example |
+| ----- | ----------- | ------- |
+| `title` | Title | `Résumé` |
+| `author` | Author name next to title | `junhoyeo` |
+| `catchphrase.text` | Main Catchphrase | `Frontend is \nINEVITABLE™` |
+| `catchphrase.description` | Description below main catchphrase(rendered line by line) | `["불가능한 프론트엔드는 없다고 믿습니다.", "그렇기 때문에 오늘도 성장하기 위한 노력을 하고 있죠."]` |
 
 ### 🤝 Social Links
+See above for preview.
+
+#### Example
+
+```json
+[
+  {
+    "name": "github",
+    "icon": "fab fa-github",
+    "href": "https://github.com/junhoyeo"
+  },
+  {
+    "name": "facebook",
+    "icon": "fab fa-facebook",
+    "href": "https://www.facebook.com/juno3704"
+  }
+]
+```
+
+#### About
+
+| Name | Description | Location |
+| ---- | ----------- | ------- |
+| Config | The JSON config file that contains list of objects | [src/data/social.json](./src/data/social.json) |
+| Type | Typing of a single object | [src/utils/types.ts](./src/utils/types.ts) (interface `ILink`) |
+
+#### Fields
+
+| Field | Description | Example |
+| ----- | ----------- | ------- |
+| `name` | Name of the navigation | `github` |
+| `icon` | Icon className for Font Awesome Icons | `fab fa-github` |
+| `href` | Location to move when link is clicked | `https://github.com/junhoyeo` |
 
 ### 🕵️‍♂️ Navigation
-Currently inside [Navbar](./src/components/organisms/Navbar.tsx) component(will detach soon).
+See above for preview.
+
+#### Example
+
+```json
+[
+  {
+    "name": "홈",
+    "href": "#"
+  },
+  {
+    "name": "개발 스택",
+    "href": "#stacks"
+  },
+  {
+    "name": "최근 프로젝트",
+    "href": "#recent"
+  },
+  {
+    "name": "블로그 살펴보기",
+    "href": "#blog"
+  }
+]
+```
+
+#### About
+
+| Name | Description | Location |
+| ---- | ----------- | ------- |
+| Config | The JSON config file that contains list of objects | [src/data/navigations.json](./src/data/navigations.json) |
+| Type | Typing of a single object | [src/utils/types.ts](./src/utils/types.ts) (interface `INavigation`) |
+
+#### Fields
 
 | Field | Description | Example |
 | ----- | ----------- | ------- |
@@ -89,6 +181,24 @@ Currently inside [Navbar](./src/components/organisms/Navbar.tsx) component(will 
 | `href` | Location to move after navigation item is clicked(usually bookmarks with `id`) | `#home`, `#stacks`, `#recent` |
 
 ### 👩🏼‍💻 Avatars
+
+#### Example
+
+```json
+[
+  {
+    "image": "coffee.png"
+  },
+  {
+    "image": "default.png"
+  },
+  {
+    "image": "poze.png",
+    "contain": true
+  }
+]
+```
+
 #### About
 
 | Name | Description | Location |
@@ -100,10 +210,12 @@ Currently inside [Navbar](./src/components/organisms/Navbar.tsx) component(will 
 
 | Field | Description | Required |
 | ----- | ----------- | -------- |
-| `image` | file name of the avatar file, located in the [public/static/avatar](https://github.com/junhoyeo/trendy-resume/tree/main/public/static/avatar) folder. | `true` |
-| `contain` | `object-fit` will be `contain` in the rendered img tag if this field is set | `false` |
+| `image` | File name of the avatar file, located in the [public/static/avatar](https://github.com/junhoyeo/trendy-resume/tree/main/public/static/avatar) folder | `true` |
+| `contain` | `object-fit` will be `contain` in the rendered img tag if this field is `true`(else `cover`) | `false` |
 
 ### 📚 Stacks
+
+#### Example
 
 ```json
 [
@@ -119,7 +231,26 @@ Currently inside [Navbar](./src/components/organisms/Navbar.tsx) component(will 
 
 ![Rendered stack](./docs/assets/configurations/stack.png)
 
+#### About
+
+| Name | Description | Location |
+| ---- | ----------- | ------- |
+| Config | The JSON config file that contains list of objects | [src/data/stacks.json](./src/data/stacks.json) |
+| Type | Typing of a single object | [src/utils/types.ts](./src/utils/types.ts) (interface `IStack`) |
+
+#### Fields
+
+| Field | Description | Required |
+| ----- | ----------- | -------- |
+| `name` | Name of stack | `true` |
+| `image` | file name of the stack image(logo) file, located in the [public/static/stacks](https://github.com/junhoyeo/trendy-resume/tree/main/public/static/stacks) folder | `true` |
+| `skill` | Skill proficiency expressed in percentiles(`0` to `100`) | `true` |
+| `color` | shadow color for image | `true` |
+| `image` | Description under stack name | `true` |
+
 ### 📦 Products
+
+#### Example
 
 ```json
 [
@@ -150,12 +281,40 @@ Currently inside [Navbar](./src/components/organisms/Navbar.tsx) component(will 
 ]
 ```
 
+#### About
+
+| Name | Description | Location |
+| ---- | ----------- | ------- |
+| Config | The JSON config file that contains list of objects | [src/data/products.json](./src/data/products.json) |
+| Type | Typing of a single object | [src/utils/types.ts](./src/utils/types.ts) (interface `IProduct`) |
+
+#### Fields
+
+| Field | Description | Required |
+| ----- | ----------- | -------- |
+| `image` | file name of the product image file, located in the [public/static/products](https://github.com/junhoyeo/trendy-resume/tree/main/public/static/products) folder | `true` |
+| `title` | Product title | `true` |
+| `parts` | Array of string parts(tags in top left to express responsibilities) | `false` |
+| `place` | Place of competition and award performance | `false` |
+| `date` | Development Period | `false` |
+| `description` | Product description(visible when card is clicked) | `false` |
+| `links` | Array of product links with interface `ILink`(visible when card is clicked) | `false` |
+
+#### Preview
+
 <div align="center">
   <img alt="Rendered product card" src="./docs/assets/configurations/product.png" width="712" />
 </div>
 
 ### 📖 Posts
-All models/fields are same as products.
+For blog posts(2nd section). All models/fields are same as products.
+
+#### About
+
+| Name | Description | Location |
+| ---- | ----------- | ------- |
+| Config | The JSON config file that contains list of objects | [src/data/products.json](./src/data/posts.json) |
+| Type | Typing of a single object | [src/utils/types.ts](./src/utils/types.ts) (interface `IProduct`) |
 
 ## 🍭 Sweet Tips
 These are the materials I used for designing this blog.

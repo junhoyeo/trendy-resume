@@ -14,12 +14,12 @@ export interface ILink {
 }
 
 export interface IProduct {
-  category?: string;
+  image: string;
   title: string;
   parts?: string[];
+  category?: string;
   place?: string;
   date?: string;
-  image: string;
   description?: string;
   links?: ILink[];
 }
