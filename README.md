@@ -137,7 +137,7 @@ See above for preview.
 | Field | Description | Example |
 | ----- | ----------- | ------- |
 | `name` | Name of the navigation | `github` |
-| `icon` | Icon className for Font Awesome Icons | `fab fa-github` |
+| `icon` | Icon className from [Font Awesome](https://fontawesome.com/) | `fab fa-github` |
 | `href` | Location to move when link is clicked | `https://github.com/junhoyeo` |
 
 ### 🕵️‍♂️ Navigation
@@ -181,6 +181,7 @@ See above for preview.
 | `href` | Location to move after navigation item is clicked(usually bookmarks with `id`) | `#home`, `#stacks`, `#recent` |
 
 ### 👩🏼‍💻 Avatars
+See above for preview.
 
 #### Example
 
@@ -229,6 +230,8 @@ See above for preview.
 ]
 ```
 
+#### Preview
+
 ![Rendered stack](./docs/assets/configurations/stack.png)
 
 #### About
@@ -245,8 +248,8 @@ See above for preview.
 | `name` | Name of stack | `true` |
 | `image` | file name of the stack image(logo) file, located in the [public/static/stacks](https://github.com/junhoyeo/trendy-resume/tree/main/public/static/stacks) folder | `true` |
 | `skill` | Skill proficiency expressed in percentiles(`0` to `100`) | `true` |
-| `color` | shadow color for image | `true` |
-| `image` | Description under stack name | `true` |
+| `color` | Brand color for stack(used in image shadow & progress bar color) | `true` |
+| `description` | Description under stack name | `true` |
 
 ### 📦 Products
 
@@ -281,6 +284,12 @@ See above for preview.
 ]
 ```
 
+#### Preview
+
+<div align="center">
+  <img alt="Rendered product card" src="./docs/assets/configurations/product.png" width="712" />
+</div>
+
 #### About
 
 | Name | Description | Location |
@@ -299,12 +308,6 @@ See above for preview.
 | `date` | Development Period | `false` |
 | `description` | Product description(visible when card is clicked) | `false` |
 | `links` | Array of product links with interface `ILink`(visible when card is clicked) | `false` |
-
-#### Preview
-
-<div align="center">
-  <img alt="Rendered product card" src="./docs/assets/configurations/product.png" width="712" />
-</div>
 
 ### 📖 Posts
 For blog posts(2nd section). All models/fields are same as products.
