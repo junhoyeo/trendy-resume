@@ -2,6 +2,8 @@ import React from 'react';
 import App from 'next/app';
 import Head from 'next/head';
 
+import '../styles/global.scss';
+
 type AppProps = {
   Component: React.ReactNode,
   pageProps: any;

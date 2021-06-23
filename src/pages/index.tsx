@@ -7,8 +7,6 @@ import StackSection from '../components/templates/StackSection';
 
 import { IProduct, IStack, ISocial } from '../utils/types';
 
-import '../styles/global.scss';
-
 const social: ISocial[] = require('../data/social.json');
 const stacks: IStack[] = require('../data/stacks.json');
 const products: IProduct[] = require('../data/products.json');
