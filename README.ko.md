@@ -28,6 +28,8 @@
 
 - [trendy-resume.now.sh](https://trendy-resume.now.sh)
 - [kdw.now.sh](https://kdw.now.sh)
+- [seungmin.io](https://seungmin.io)
+- [about.mingeun.com](https://about.mingeun.com) (inspired from design)
 
 ## 🏗 직접 만들어 보세요!
 
