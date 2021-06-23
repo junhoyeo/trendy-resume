@@ -12,7 +12,7 @@ export const Navbar: React.FC = () => {
 
   const onClickNavItem = (href: string) => {
     setSelectedHref(href);
-    location.href = href;
+    window.location.href = href;
   };
 
   return (
