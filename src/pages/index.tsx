@@ -38,7 +38,7 @@ export const Home: React.FC = () => (
     <Footer>
       <FooterText>
         © 2021{' '}
-        <a href="https://github.com/junhoyeo/trendy-resume" target="_blank">
+        <a href="https://github.com/junhoyeo/trendy-resume" target="_blank" rel="noreferrer">
           Junho Yeo
         </a>
         . All rights reserved.
