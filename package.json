@@ -9,28 +9,28 @@
     "start": "next start"
   },
   "dependencies": {
-    "next": "^11.0.1",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
-    "styled-components": "^5.3.0"
+    "next": "^12.2.2",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "styled-components": "^5.3.5"
   },
   "devDependencies": {
     "@types/next": "^9.0.0",
-    "@types/node": "^15.12.4",
-    "@types/react": "^17.0.11",
-    "@types/react-dom": "^17.0.8",
-    "@types/styled-components": "^5.1.10",
-    "@typescript-eslint/eslint-plugin": "^4.28.0",
-    "@typescript-eslint/parser": "^4.28.0",
+    "@types/node": "^18.0.3",
+    "@types/react": "^18.0.15",
+    "@types/react-dom": "^18.0.6",
+    "@types/styled-components": "^5.1.25",
+    "@typescript-eslint/eslint-plugin": "^5.30.6",
+    "@typescript-eslint/parser": "^5.30.6",
     "babel-eslint": "^10.1.0",
-    "babel-plugin-styled-components": "^1.12.0",
-    "eslint": "^7.29.0",
-    "eslint-config-next": "^11.0.1",
-    "eslint-config-react-app": "^6.0.0",
-    "eslint-plugin-flowtype": "^5.7.2",
-    "sass": "^1.35.1",
-    "sass-loader": "^12.1.0",
-    "typescript": "~4.3.4"
+    "babel-plugin-styled-components": "^2.0.7",
+    "eslint": "^8.19.0",
+    "eslint-config-next": "^12.2.2",
+    "eslint-config-react-app": "^7.0.1",
+    "eslint-plugin-flowtype": "^8.0.3",
+    "sass": "^1.53.0",
+    "sass-loader": "^13.0.2",
+    "typescript": "~4.7.4"
   },
   "eslintConfig": {
     "extends": "react-app"
