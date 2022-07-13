@@ -12,7 +12,7 @@ const stacks: IStack[] = require('../data/stacks.json');
 const products: IProduct[] = require('../data/products.json');
 const posts: IProduct[] = require('../data/posts.json');
 
-export const Home: React.FC = () => (
+const Home: React.FC = () => (
   <Content>
     <Header social={social} />
     <StackSection
