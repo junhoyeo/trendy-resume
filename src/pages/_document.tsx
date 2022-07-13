@@ -36,7 +36,7 @@ export default class CustomDocument extends Document {
 
   render() {
     return (
-      <Html lang="en">
+      <Html lang="ko">
         <Head>
           <script src="https://kit.fontawesome.com/a42f454688.js" />
         </Head>

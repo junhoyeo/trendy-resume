@@ -6,13 +6,13 @@ import { TitleText } from '../atoms/Text';
 import Label from '../molecules/Label';
 
 import getRandomSelect from '../../utils/getRandomSelect';
-import { IInfo, IAvatar } from '../../utils/types';
+import { IAvatar } from '../../utils/types';
+import avatars from '../../data/avatar.json';
+import info from '../../data/info.json'
 
 const {
   catchphrase: { text: catchphraseText, description: catchphraseDescription },
-}: IInfo = require('../../data/info.json');
-
-const avatars: IAvatar[] = require('../../data/avatar.json');
+} = info
 
 export const Carousel: React.FC = () => {
   const [avatar, setAvatar] = useState<IAvatar>({

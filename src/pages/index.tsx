@@ -5,12 +5,10 @@ import { Header } from '../components/templates/Header';
 import ProductSection from '../components/templates/ProductSection';
 import StackSection from '../components/templates/StackSection';
 
-import { IProduct, IStack, ISocial } from '../utils/types';
-
-const social: ISocial[] = require('../data/social.json');
-const stacks: IStack[] = require('../data/stacks.json');
-const products: IProduct[] = require('../data/products.json');
-const posts: IProduct[] = require('../data/posts.json');
+import social from '../data/social.json';
+import stacks from '../data/stacks.json';
+import products from '../data/products.json';
+import posts from '../data/posts.json';
 
 const Home: React.FC = () => (
   <Content>

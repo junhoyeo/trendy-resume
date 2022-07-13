@@ -8,13 +8,14 @@ import Navbar from '../organisms/Navbar';
 import Carousel from '../organisms/Carousel';
 
 import openNewWindow from '../../utils/openNewWindow';
-import { IInfo, ISocial } from '../../utils/types';
+import { ISocial } from '../../utils/types';
+import info from '../../data/info.json'
 
 type HeaderProps = {
   social: ISocial[];
 };
 
-const { title, author }: IInfo = require('../../data/info.json');
+const { title, author } = info;
 
 export const Header: React.FC<HeaderProps> = ({ social }) => {
   return (
