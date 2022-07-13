@@ -1,9 +1,8 @@
 import * as React from 'react';
 import styled, { css } from 'styled-components';
 
-import { Text } from '../atoms/Text';
-
 import { INavigation } from '../../utils/types';
+import { Text } from '../atoms/Text';
 
 interface ISelected {
   selected?: boolean;
@@ -19,13 +18,8 @@ export const NavItem: React.FC<INavItem> = ({
   onClick,
   selected = false,
 }) => (
-  <NavContainer
-    selected={selected}
-    onClick={() => onClick(href)}
-  >
-    <NavText>
-      {name}
-    </NavText>
+  <NavContainer selected={selected} onClick={() => onClick(href)}>
+    <NavText>{name}</NavText>
   </NavContainer>
 );
 
@@ -48,10 +42,12 @@ const NavContainer = styled.div<ISelected>`
     min-width: 2rem;
   }
 
-  ${({ selected }) => selected && css`
-    color: royalblue;
-    border-bottom-color: royalblue;
-  `};
+  ${({ selected }) =>
+    selected &&
+    css`
+      color: royalblue;
+      border-bottom-color: royalblue;
+    `};
 `;
 
 const NavText = styled(Text)`

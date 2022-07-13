@@ -1,11 +1,10 @@
 import * as React from 'react';
 import styled from 'styled-components';
 
+import { IStack } from '../../utils/types';
 import Text from '../atoms/Text';
 import Label from '../molecules/Label';
 import ProgressBar from '../molecules/ProgressBar';
-
-import { IStack } from '../../utils/types';
 
 export const StackCard: React.FC<IStack> = ({
   name,

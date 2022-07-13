@@ -1,18 +1,17 @@
 import React, { useEffect, useState } from 'react';
 import styled, { css } from 'styled-components';
 
+import avatars from '../../data/avatar.json';
+import info from '../../data/info.json';
+import getRandomSelect from '../../utils/getRandomSelect';
+import { IAvatar } from '../../utils/types';
 import { Section } from '../atoms/Section';
 import { TitleText } from '../atoms/Text';
 import Label from '../molecules/Label';
 
-import getRandomSelect from '../../utils/getRandomSelect';
-import { IAvatar } from '../../utils/types';
-import avatars from '../../data/avatar.json';
-import info from '../../data/info.json'
-
 const {
   catchphrase: { text: catchphraseText, description: catchphraseDescription },
-} = info
+} = info;
 
 export const Carousel: React.FC = () => {
   const [avatar, setAvatar] = useState<IAvatar>({

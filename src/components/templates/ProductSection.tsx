@@ -1,13 +1,12 @@
 import * as React from 'react';
 import styled from 'styled-components';
 
+import { IProduct } from '../../utils/types';
+import useWindowSize from '../../utils/useWindowSize';
 import Section from '../atoms/Section';
 import { TitleText } from '../atoms/Text';
 import ProductCard from '../organisms/ProductCard';
 import SkeletonCard from '../organisms/SkeletonCard';
-
-import { IProduct } from '../../utils/types';
-import useWindowSize from '../../utils/useWindowSize';
 
 type ProductSectionProps = {
   id?: string;

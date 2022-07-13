@@ -1,11 +1,10 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
 
+import navigations from '../../data/navigations.json';
+import { INavigation } from '../../utils/types';
 import Section from '../atoms/Section';
 import NavItem from '../molecules/NavItem';
-
-import { INavigation } from '../../utils/types';
-import navigations from '../../data/navigations.json';
 
 export const Navbar: React.FC = () => {
   const [selectedHref, setSelectedHref] = useState<string>('#');

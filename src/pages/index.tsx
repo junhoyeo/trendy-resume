@@ -4,11 +4,10 @@ import styled from 'styled-components';
 import { Header } from '../components/templates/Header';
 import ProductSection from '../components/templates/ProductSection';
 import StackSection from '../components/templates/StackSection';
-
+import posts from '../data/posts.json';
+import products from '../data/products.json';
 import social from '../data/social.json';
 import stacks from '../data/stacks.json';
-import products from '../data/products.json';
-import posts from '../data/posts.json';
 
 const Home: React.FC = () => (
   <Content>
@@ -34,7 +33,11 @@ const Home: React.FC = () => (
     <Footer>
       <FooterText>
         © 2021{' '}
-        <a href="https://github.com/junhoyeo/trendy-resume" target="_blank" rel="noreferrer">
+        <a
+          href="https://github.com/junhoyeo/trendy-resume"
+          target="_blank"
+          rel="noreferrer"
+        >
           Junho Yeo
         </a>
         . All rights reserved.

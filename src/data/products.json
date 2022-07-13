@@ -2,10 +2,7 @@
   {
     "image": "static/products/motorgraph.png",
     "title": "모터그래프 커뮤니티 게시판 제작",
-    "parts": [
-      "FRONTEND",
-      "SSR"
-    ],
+    "parts": ["FRONTEND", "SSR"],
     "category": "웹 서비스",
     "place": "아웃소싱",
     "date": "2020.05 ~ 2020.07",
@@ -15,10 +12,7 @@
   {
     "image": "static/products/zoom.jpg",
     "title": "줌 당겨 줌니다. ZOOM~!",
-    "parts": [
-      "BACKEND",
-      "DESIGN"
-    ],
+    "parts": ["BACKEND", "DESIGN"],
     "category": "웹 서비스",
     "place": "개인 프로젝트",
     "date": "2020.04.24 ~ 2020.05.06",
@@ -44,10 +38,7 @@
   {
     "image": "static/products/bubble-tabbar.jpg",
     "title": "알엔에서 뽀짝한 버블 탭 바 만들기",
-    "parts": [
-      "APP",
-      "PACKAGE"
-    ],
+    "parts": ["APP", "PACKAGE"],
     "category": "애플리케이션 / 패키지",
     "place": "개인 프로젝트",
     "date": "2020.04.11 ~ 2020.04.25",
@@ -68,10 +59,7 @@
   {
     "image": "static/products/inudevs-bucket.jpg",
     "title": "이누와 함께 이뤄 나갈 것들.",
-    "parts": [
-      "FRONTEND",
-      "DESIGN"
-    ],
+    "parts": ["FRONTEND", "DESIGN"],
     "category": "웹 서비스",
     "place": "한국디지털미디어고등학교 아이디어 실험 동아리, 이누",
     "date": "2020.03.28",
@@ -92,10 +80,7 @@
   {
     "image": "static/products/crypto-bot.png",
     "title": "암호화폐 거래 봇 모니터링 앱",
-    "parts": [
-      "FRONTEND",
-      "BLOCKCHAIN"
-    ],
+    "parts": ["FRONTEND", "BLOCKCHAIN"],
     "category": "데스크탑 애플리케이션",
     "place": "아웃소싱",
     "date": "2020.03.05 ~ 2020.04.30",
@@ -104,9 +89,7 @@
   {
     "image": "static/products/gifty.jpg",
     "title": "받았다가 잊어버리고 못 써서 울지 않기. 기프티콘 관리 서비스, 기프티",
-    "parts": [
-      "PERSONAL"
-    ],
+    "parts": ["PERSONAL"],
     "category": "웹 서비스",
     "place": "개인 프로젝트",
     "date": "2020.03 ~",
@@ -127,10 +110,7 @@
   {
     "image": "static/products/spes.jpg",
     "title": "새해 소망 이루기, 올해는 Spes™와 함께",
-    "parts": [
-      "FRONTEND",
-      "DESIGN"
-    ],
+    "parts": ["FRONTEND", "DESIGN"],
     "category": "웹 서비스",
     "place": "Hello20thon 온라인 해커톤 최우수상(1위)",
     "date": "2020.02.01 ~ 2020.02.06",
@@ -156,10 +136,7 @@
   {
     "image": "static/products/wadong.png",
     "title": "나에게 추억이란 복덩이를, WADONG",
-    "parts": [
-      "BACKEND",
-      "DESIGN"
-    ],
+    "parts": ["BACKEND", "DESIGN"],
     "category": "애플리케이션",
     "place": "HIGHTHON : NewYear(2020)",
     "date": "2020.01.18 ~ 2020.01.19",
@@ -180,9 +157,7 @@
   {
     "image": "static/products/their-own-league.png",
     "title": "맨날 코딩하는 우리들만의 이야기. 그들만의 리그",
-    "parts": [
-      "PERSONAL"
-    ],
+    "parts": ["PERSONAL"],
     "category": "웹 서비스",
     "place": "개인 프로젝트",
     "date": "2020.01.06 ~ 2020.01.07",
@@ -198,9 +173,7 @@
   {
     "image": "static/products/citation.png",
     "title": "작년에 고마웠던 분들께 한 장씩, 새해에는 감사장!",
-    "parts": [
-      "PERSONAL"
-    ],
+    "parts": ["PERSONAL"],
     "category": "웹 서비스",
     "place": "개인 프로젝트",
     "date": "2019.12.29 ~ 2020.01.01",
@@ -216,10 +189,7 @@
   {
     "image": "static/products/danim.png",
     "title": "세상을 거닐다, 다님.",
-    "parts": [
-      "APP",
-      "DESIGN"
-    ],
+    "parts": ["APP", "DESIGN"],
     "category": "애플리케이션",
     "place": "제 19회 앱잼 - 생활 부문 최우수상(1위)",
     "date": "2019.12.21 ~ 2019.12.22",
@@ -240,10 +210,7 @@
   {
     "image": "static/products/cake.png",
     "title": "스마트한 공간 사용의 시작, CAKE",
-    "parts": [
-      "FRONTEND",
-      "BACKEND"
-    ],
+    "parts": ["FRONTEND", "BACKEND"],
     "category": "웹 서비스 / IoT 솔루션",
     "place": "제 6회 한국디지털미디어고등학교 창의 IT 공모전 (그러나 대회가 터짐)",
     "date": "2019.12.03 ~ 2019.12.12",
@@ -269,10 +236,7 @@
   {
     "image": "static/products/inssa.png",
     "title": "사회적 약자를 위한 블루투스 비컨 신호등 솔루션, INSSA",
-    "parts": [
-      "FRONTEND",
-      "BACKEND"
-    ],
+    "parts": ["FRONTEND", "BACKEND"],
     "category": "애플리케이션 / IoT 솔루션",
     "place": "제 3회 동탄중앙이음터 ICT 메이커톤 대상(1위)",
     "date": "2019.11.16 ~ 2019.11.17",
@@ -288,9 +252,7 @@
   {
     "image": "static/products/deliveries.png",
     "title": "시킨 물건이 어디까지 왔는지, 한꺼번에 확인하기. 당신의 모든 배송",
-    "parts": [
-      "PERSONAL"
-    ],
+    "parts": ["PERSONAL"],
     "category": "웹 서비스",
     "place": "개인 프로젝트",
     "date": "2019.11.03",
@@ -311,10 +273,7 @@
   {
     "image": "static/products/wand.png",
     "title": "인도어 맵 기반 건물 네트워크 서비스, Wand",
-    "parts": [
-      "FRONTEND",
-      "PROTOTYPE"
-    ],
+    "parts": ["FRONTEND", "PROTOTYPE"],
     "category": "웹 서비스",
     "place": "2019 비즈쿨 고등학생 기업가정신 캠프",
     "date": "2019.08 ~ 2019.10",
@@ -330,10 +289,7 @@
   {
     "image": "static/products/ithaca.png",
     "title": "멘토가 있는 교실, 이타카",
-    "parts": [
-      "APP",
-      "BACKEND"
-    ],
+    "parts": ["APP", "BACKEND"],
     "category": "애플리케이션",
     "place": "2019 삼성SDS - JA Korea 스마트 해커톤",
     "date": "2019.08.06 ~ 2019.08.07",
@@ -354,9 +310,7 @@
   {
     "image": "static/products/fairy.png",
     "title": "또다른 나를 위한 새로운 만남, 페어리",
-    "parts": [
-      "BACKEND"
-    ],
+    "parts": ["BACKEND"],
     "category": "웹 서비스",
     "place": "Junction X Seoul 2019, ZEPETO Render API Track",
     "date": "2019.05.10 ~ 2019.05.12",
@@ -372,10 +326,7 @@
   {
     "image": "static/products/cube.png",
     "title": "당신의 소중함을 보관하다, 큐브",
-    "parts": [
-      "IDEA",
-      "FRONTEND"
-    ],
+    "parts": ["IDEA", "FRONTEND"],
     "category": "웹 앱 / IoT 솔루션",
     "place": "제 18회 앱잼 - IoT 부문",
     "date": "2019.04.20 ~ 2019.04.21",
@@ -391,9 +342,7 @@
   {
     "image": "static/products/dimicigan.png",
     "title": "학교의 크로노스를 꿈꾸는 당신을 위한 익스텐션. 디미시간",
-    "parts": [
-      "PERSONAL"
-    ],
+    "parts": ["PERSONAL"],
     "category": "브라우저 확장 프로그램",
     "place": "개인 프로젝트",
     "date": "2019.03.19 ~ 2019.03.24",
@@ -409,9 +358,7 @@
   {
     "image": "static/products/dimigoin.png",
     "title": "한국디지털미디어고등학교 시스템 전산화 프로젝트: 디미고인",
-    "parts": [
-      "FRONTEND"
-    ],
+    "parts": ["FRONTEND"],
     "category": "웹 서비스 / 인트라넷",
     "place": "디미고인 개발팀",
     "date": "2019.02 ~",
@@ -427,9 +374,7 @@
   {
     "image": "static/products/comgong.png",
     "title": "직접 눌러보고 나서, 당신의 막장 인생을 공유해요. 컴공과 빙고",
-    "parts": [
-      "PERSONAL"
-    ],
+    "parts": ["PERSONAL"],
     "category": "웹 서비스",
     "place": "개인 프로젝트",
     "date": "2019.02.01 ~ 2019.02.02",
@@ -450,10 +395,7 @@
   {
     "image": "static/products/biss.png",
     "title": "블록체인으로 만드는 안전한 IoT, BISS",
-    "parts": [
-      "BACKEND",
-      "BLOCKCHAIN"
-    ],
+    "parts": ["BACKEND", "BLOCKCHAIN"],
     "category": "블록체인 솔루션",
     "place": "2018 제주 블록체인 해커톤 - 우수상(2위)",
     "date": "2018.10.26 ~ 2018.10.28",

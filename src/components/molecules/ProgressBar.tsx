@@ -12,13 +12,8 @@ export const ProgressBar: React.FC<ProgressBarProps> = ({
   color,
   progress = 0,
 }) => (
-  <Container
-    className={className}
-  >
-    <Bar
-      color={color}
-      progress={progress}
-    />
+  <Container className={className}>
+    <Bar color={color} progress={progress} />
   </Container>
 );
 
@@ -61,11 +56,15 @@ const Bar = styled.div<BarProps>`
   );
   background-size: 1.5rem 1.5rem;
 
-  ${({ color }) => color && css`
-    background-color: ${color};
-  `}
+  ${({ color }) =>
+    color &&
+    css`
+      background-color: ${color};
+    `}
 
-  ${({ progress }) => progress && css`
-    width: ${progress}%;
-  `}
+  ${({ progress }) =>
+    progress &&
+    css`
+      width: ${progress}%;
+    `}
 `;

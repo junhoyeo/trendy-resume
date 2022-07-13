@@ -6,11 +6,8 @@ type IconProps = {
   onClick?: () => void;
 };
 
-export const Icon = styled.i.attrs(({
-  className = '',
-  icon,
-}: IconProps) => ({
-    className: `${icon} ${className}`,
+export const Icon = styled.i.attrs(({ className = '', icon }: IconProps) => ({
+  className: `${icon} ${className}`,
 }))<IconProps>`
   cursor: pointer;
 `;

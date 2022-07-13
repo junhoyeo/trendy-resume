@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "next",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "lint:fix": "prettier . --write"
   },
   "dependencies": {
     "next": "^12.2.2",
