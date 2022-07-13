@@ -1,20 +1,21 @@
 import * as React from 'react';
 import styled from 'styled-components';
 
+import info from '@/data/info.json';
+import openNewWindow from '@/utils/openNewWindow';
+import { ISocial } from '@/utils/types';
+
 import Section from '../atoms/Section';
 import Text, { TitleText } from '../atoms/Text';
 import { Icon } from '../molecules/Icon';
-import Navbar from '../organisms/Navbar';
 import Carousel from '../organisms/Carousel';
-
-import openNewWindow from '../../utils/openNewWindow';
-import { IInfo, ISocial } from '../../utils/types';
+import Navbar from '../organisms/Navbar';
 
 type HeaderProps = {
   social: ISocial[];
 };
 
-const { title, author }: IInfo = require('../../data/info.json');
+const { title, author } = info;
 
 export const Header: React.FC<HeaderProps> = ({ social }) => {
   return (

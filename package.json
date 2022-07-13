@@ -6,34 +6,25 @@
   "scripts": {
     "dev": "next",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "lint:fix": "prettier . --write"
   },
   "dependencies": {
-    "next": "^11.0.1",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
-    "styled-components": "^5.3.0"
+    "next": "^12.2.2",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "sass": "^1.53.0",
+    "styled-components": "^5.3.5"
   },
   "devDependencies": {
+    "@ianvs/prettier-plugin-sort-imports": "^3.4.2",
     "@types/next": "^9.0.0",
-    "@types/node": "^15.12.4",
-    "@types/react": "^17.0.11",
-    "@types/react-dom": "^17.0.8",
-    "@types/styled-components": "^5.1.10",
-    "@typescript-eslint/eslint-plugin": "^4.28.0",
-    "@typescript-eslint/parser": "^4.28.0",
-    "babel-eslint": "^10.1.0",
-    "babel-plugin-styled-components": "^1.12.0",
-    "eslint": "^7.29.0",
-    "eslint-config-next": "^11.0.1",
-    "eslint-config-react-app": "^6.0.0",
-    "eslint-plugin-flowtype": "^5.7.2",
-    "sass": "^1.35.1",
-    "sass-loader": "^12.1.0",
-    "typescript": "~4.3.4"
-  },
-  "eslintConfig": {
-    "extends": "react-app"
+    "@types/node": "^18.0.3",
+    "@types/react": "^18.0.15",
+    "@types/react-dom": "^18.0.6",
+    "@types/styled-components": "^5.1.25",
+    "prettier": "^2.7.1",
+    "typescript": "~4.7.4"
   },
   "browserslist": {
     "production": [

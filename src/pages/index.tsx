@@ -1,18 +1,15 @@
 import * as React from 'react';
 import styled from 'styled-components';
 
-import { Header } from '../components/templates/Header';
-import ProductSection from '../components/templates/ProductSection';
-import StackSection from '../components/templates/StackSection';
+import { Header } from '@/components/templates/Header';
+import ProductSection from '@/components/templates/ProductSection';
+import StackSection from '@/components/templates/StackSection';
+import posts from '@/data/posts.json';
+import products from '@/data/products.json';
+import social from '@/data/social.json';
+import stacks from '@/data/stacks.json';
 
-import { IProduct, IStack, ISocial } from '../utils/types';
-
-const social: ISocial[] = require('../data/social.json');
-const stacks: IStack[] = require('../data/stacks.json');
-const products: IProduct[] = require('../data/products.json');
-const posts: IProduct[] = require('../data/posts.json');
-
-export const Home: React.FC = () => (
+const Home: React.FC = () => (
   <Content>
     <Header social={social} />
     <StackSection
@@ -36,7 +33,11 @@ export const Home: React.FC = () => (
     <Footer>
       <FooterText>
         © 2021{' '}
-        <a href="https://github.com/junhoyeo/trendy-resume" target="_blank" rel="noreferrer">
+        <a
+          href="https://github.com/junhoyeo/trendy-resume"
+          target="_blank"
+          rel="noreferrer"
+        >
           Junho Yeo
         </a>
         . All rights reserved.

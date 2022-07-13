@@ -2,10 +2,7 @@
   {
     "image": "https://useknowledge-git-post-variance.junhoyeo.now.sh/static/6bf30522dd29ed802ee4ca026ecae3a5/f65ec/pikachu.png",
     "title": "포켓몬 타입에는 없는 변성 알아보기",
-    "parts": [
-      "TYPE-LEVEL",
-      "PROGRAMMING"
-    ],
+    "parts": ["TYPE-LEVEL", "PROGRAMMING"],
     "category": "타입스크립트",
     "place": "useKnowledge",
     "date": "2020.01.09 ~ (작성중)",

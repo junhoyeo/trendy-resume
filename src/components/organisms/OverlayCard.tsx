@@ -1,11 +1,11 @@
 import * as React from 'react';
 import styled from 'styled-components';
 
+import openNewWindow from '@/utils/openNewWindow';
+import { ILink } from '@/utils/types';
+
 import Text from '../atoms/Text';
 import Icon from '../molecules/Icon';
-
-import openNewWindow from '../../utils/openNewWindow';
-import { ILink } from '../../utils/types';
 
 type OverlayCardProps = {
   hide?: boolean;
@@ -24,7 +24,7 @@ export const OverlayCard: React.FC<OverlayCardProps> = ({
 
   const onClickLink = (
     event: React.MouseEvent<HTMLLIElement>,
-    href: string
+    href: string,
   ) => {
     event.stopPropagation();
     openNewWindow(href);
