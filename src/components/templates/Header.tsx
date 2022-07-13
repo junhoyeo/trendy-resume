@@ -1,9 +1,10 @@
 import * as React from 'react';
 import styled from 'styled-components';
 
-import info from '../../data/info.json';
-import openNewWindow from '../../utils/openNewWindow';
-import { ISocial } from '../../utils/types';
+import info from '@/data/info.json';
+import openNewWindow from '@/utils/openNewWindow';
+import { ISocial } from '@/utils/types';
+
 import Section from '../atoms/Section';
 import Text, { TitleText } from '../atoms/Text';
 import { Icon } from '../molecules/Icon';

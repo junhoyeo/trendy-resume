@@ -1,13 +1,13 @@
 import * as React from 'react';
 import styled from 'styled-components';
 
-import { Header } from '../components/templates/Header';
-import ProductSection from '../components/templates/ProductSection';
-import StackSection from '../components/templates/StackSection';
-import posts from '../data/posts.json';
-import products from '../data/products.json';
-import social from '../data/social.json';
-import stacks from '../data/stacks.json';
+import { Header } from '@/components/templates/Header';
+import ProductSection from '@/components/templates/ProductSection';
+import StackSection from '@/components/templates/StackSection';
+import posts from '@/data/posts.json';
+import products from '@/data/products.json';
+import social from '@/data/social.json';
+import stacks from '@/data/stacks.json';
 
 const Home: React.FC = () => (
   <Content>

@@ -1,7 +1,8 @@
 import * as React from 'react';
 import styled from 'styled-components';
 
-import { IStack } from '../../utils/types';
+import { IStack } from '@/utils/types';
+
 import Section from '../atoms/Section';
 import { TitleText } from '../atoms/Text';
 import StackCard from '../organisms/StackCard';

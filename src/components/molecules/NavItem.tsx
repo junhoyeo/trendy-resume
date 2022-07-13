@@ -1,7 +1,8 @@
 import * as React from 'react';
 import styled, { css } from 'styled-components';
 
-import { INavigation } from '../../utils/types';
+import { INavigation } from '@/utils/types';
+
 import { Text } from '../atoms/Text';
 
 interface ISelected {

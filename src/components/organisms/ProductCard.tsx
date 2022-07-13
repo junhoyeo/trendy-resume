@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import styled, { css } from 'styled-components';
 
-import { IProduct } from '../../utils/types';
+import { IProduct } from '@/utils/types';
+
 import Text from '../atoms/Text';
 import Label from '../molecules/Label';
 import OverlayCard from './OverlayCard';

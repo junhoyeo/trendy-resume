@@ -1,8 +1,9 @@
 import * as React from 'react';
 import styled from 'styled-components';
 
-import openNewWindow from '../../utils/openNewWindow';
-import { ILink } from '../../utils/types';
+import openNewWindow from '@/utils/openNewWindow';
+import { ILink } from '@/utils/types';
+
 import Text from '../atoms/Text';
 import Icon from '../molecules/Icon';
 
